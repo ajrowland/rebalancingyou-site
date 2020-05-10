@@ -2,7 +2,7 @@
   <div class="photo">
     <div class="photo__inner">
       <div class="photo__text">
-        <img class="photo__thumbnail" :src="post.thumbnail_src">
+        <img class="photo__thumbnail" :src="post.thumbnail_src" alt="Post thumbnail">
         {{text}}
       </div>
       <div class="photo__tags" v-if="tags">
@@ -18,7 +18,7 @@
   padding: 30px;
   background: rgba(255, 255, 255, .6);
   flex: 1 0 calc(25% - 20px);
-  border-bottom: 10px solid lighten($brand-primary-colour, 20%);
+  border-bottom: 10px solid lighten($brand-primary-colour, 10%);
 
   @media screen and (min-width: 640px) {
     border-width: 40px;
@@ -39,7 +39,7 @@
       font-size: 100px;
       position: absolute;
       left: -20px;
-      color: #0099ff;
+      color: $brand-primary-colour;
       top: -25px;
       opacity: .1;
       line-height: 1;

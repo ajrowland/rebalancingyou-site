@@ -60,7 +60,7 @@ header {
 }
 
 main {
-  background-image: linear-gradient(to bottom right, rgba($brand-primary-colour, .6), #fff);
+  background-image: linear-gradient(to bottom right, rgba($brand-primary-colour, .8), #fff);
 }
 
 .footer {

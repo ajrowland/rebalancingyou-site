@@ -50,7 +50,8 @@ export default {
     InstagramPost: InstagramPost
   },
   metaInfo: {
-    title: 'Hello, world!'
+    title: 'Home',
+    description: 'Energise, replenish, nurish.'
   }
 }
 </script>
