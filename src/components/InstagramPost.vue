@@ -64,7 +64,7 @@
   &__tags {
     margin-top: 20px;
     padding-top: 10px;
-    border-top: 1px solid lighten($brand-primary-colour, 40%);
+    border-top: 1px solid rgba($brand-primary-colour, .1);
   }
 
   &__tag {
