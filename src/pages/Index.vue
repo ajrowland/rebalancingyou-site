@@ -29,6 +29,7 @@
       node {
         display_url
         thumbnail_src
+        shortcode
         edge_media_to_caption {
           edges {
             node {

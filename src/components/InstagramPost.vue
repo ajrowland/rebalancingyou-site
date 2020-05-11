@@ -1,5 +1,5 @@
 <template>
-  <div class="photo">
+  <a class="photo" :style="`background-image:url(${post.display_url})`" :href="`https://www.instagram.com/p/${post.shortcode}`" target="_blank" title="Visit post on Instagram">
     <div class="photo__inner">
       <div class="photo__text">
         <img class="photo__thumbnail" :src="post.thumbnail_src" alt="Post thumbnail">
@@ -9,28 +9,43 @@
         <div class="photo__tag" v-for="(tag, i) in tags" :key="i" v-html="tag" />
       </div>
     </div>
-  </div>
+  </a>
 </template>
 
 <style lang="scss">
 .photo {
+  display: block;
   margin: 20px;
-  padding: 30px;
   background: rgba(255, 255, 255, .6);
   flex: 1 0 calc(25% - 20px);
   border-bottom: 10px solid lighten($brand-primary-colour, 10%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: $brand-secondary-colour;
+  text-decoration: none;
+  transition: transform .2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+
+  &:nth-child(3n+1):last-child {
+    display: none;
+  }
 
   @media screen and (min-width: 640px) {
-    border-width: 40px;
+    border-width: 20px;
   }
 
   &__inner {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100%;
+    height: calc(100% - 40px);
     position: relative;
     quotes: "“" "”" "“" "”";
+    background: rgba(255, 255, 255, .8);
+    padding: 20px;
 
     &:before {
       content: open-quote;

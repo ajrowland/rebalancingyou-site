@@ -45,7 +45,7 @@ body {
   margin: 0;
   font-size: 14px;
   font-family: "Open Sans";
-  color: #0e1a25;
+  color: $brand-secondary-colour;
 }
 
 * {
