@@ -102,7 +102,7 @@ export default {
   },
   created() {
     const tokens = this.post.edge_media_to_caption.edges[0].node.text.split(' ')
-    this.text = tokens.filter(t => !t.startsWith('#')).join(' ')
+    this.text = tokens.filter(t => !t.startsWith('#')).slice(0, 15).join(' ') + '...'
     this.tags = tokens.filter(t => t.startsWith('#') && t.length > 1)
   }
 }
