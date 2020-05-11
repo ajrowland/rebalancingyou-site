@@ -18,7 +18,7 @@ function addStyleResource (rule) {
 
 module.exports = {
   siteName: 'Rebalancing You',
-  siteDescription: 'Energise, replenish, nurish.',
+  siteDescription: 'Energise, restore, nurish.',
   plugins: [
     {
       use: '@zefman/gridsome-source-instagram',

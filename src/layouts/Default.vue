@@ -122,7 +122,7 @@ img {
     text-align: right;
 
     a {
-      fill: #90c6e1;
+      fill: #c3c0c0;
     }
   }
 }
