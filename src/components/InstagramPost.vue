@@ -1,5 +1,5 @@
 <template>
-  <a class="photo" :style="`background-image:url(${post.display_url})`" :href="`https://www.instagram.com/p/${post.shortcode}`" target="_blank" title="Visit post on Instagram">
+  <a v-if="display" class="photo" :style="`background-image:url(${post.display_url})`" :href="`https://www.instagram.com/p/${post.shortcode}`" target="_blank" title="Visit post on Instagram">
     <div class="photo__inner">
       <div class="photo__text">
         <img class="photo__thumbnail" :src="post.thumbnail_src" alt="Post thumbnail">
@@ -97,13 +97,15 @@ export default {
   data() {
     return {
       text: '',
-      tags: []
+      tags: [],
+      display: true
     }
   },
   created() {
     const tokens = this.post.edge_media_to_caption.edges[0].node.text.split(' ')
     this.text = tokens.filter(t => !t.startsWith('#')).slice(0, 15).join(' ') + '...'
     this.tags = tokens.filter(t => t.startsWith('#') && t.length > 1)
+    //this.display = this.tags.includes('#rebalancingyou')
   }
 }
 </script>
