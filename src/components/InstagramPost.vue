@@ -25,6 +25,8 @@
   transition: transform .2s ease-in-out;
 
   &:nth-child(odd) {
+    min-height: 250px;
+
     .photo__inner {
       background: none;
       padding: 0;
