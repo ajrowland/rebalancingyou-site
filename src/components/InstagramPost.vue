@@ -17,13 +17,37 @@
   display: block;
   margin: 20px;
   background: rgba(255, 255, 255, .6);
-  flex: 1 0 calc(25% - 20px);
   border-bottom: 10px solid lighten($brand-primary-colour, 10%);
   background-size: cover;
   background-repeat: no-repeat;
   color: $brand-secondary-colour;
   text-decoration: none;
   transition: transform .2s ease-in-out;
+
+  &:nth-child(odd) {
+    .photo__inner {
+      background: none;
+      padding: 0;
+      height: 100%;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .photo__text {
+      background: #fff;
+      padding: 20px;
+
+      &:before {
+        left: 4px;
+        top: -4px;
+      }
+    }
+
+    .photo__thumbnail,
+    .photo__tags {
+      display: none;
+    }
+  }
 
   &:hover {
     transform: scale(1.02);
@@ -35,6 +59,7 @@
 
   @media screen and (min-width: 640px) {
     border-width: 20px;
+    flex: 1 0 calc(25% - 20px);
   }
 
   &__inner {
@@ -43,9 +68,13 @@
     justify-content: space-between;
     height: calc(100% - 40px);
     position: relative;
-    quotes: "“" "”" "“" "”";
     background: rgba(255, 255, 255, .8);
     padding: 20px;
+  }
+
+  &__text {
+    position: relative;
+    quotes: "“" "”" "“" "”";
 
     &:before {
       content: open-quote;
@@ -53,15 +82,13 @@
       font-weight: bold;
       font-size: 100px;
       position: absolute;
-      left: -20px;
+      left: -15px;
       color: $brand-primary-colour;
       top: -25px;
-      opacity: .1;
+      opacity: .2;
       line-height: 1;
     }
-  }
 
-  &__text {
     &:first-letter {
       font-size: 150%;
       font-weight: bold;
