@@ -17,10 +17,10 @@
   display: block;
   margin: 20px;
   background: rgba(255, 255, 255, .6);
-  border-bottom: 10px solid #c1c1c1;//$brand-primary-colour;//#b6c649;//lighten($brand-primary-colour, 10%);
+  border-bottom: 10px solid $colour-grey-light;
   background-size: cover;
   background-repeat: no-repeat;
-  color: $brand-secondary-colour;
+  color: $colour-grey-dark;
   text-decoration: none;
   transition: transform .2s ease-in-out;
 
@@ -36,12 +36,12 @@
     }
 
     .photo__text {
-      background: #fff;
+      background: $colour-white;
       padding: 20px;
 
       &:before {
-        left: 4px;
-        top: -4px;
+        left: 6px;
+        top: -2px;
       }
     }
 
@@ -84,31 +84,30 @@
       font-weight: bold;
       font-size: 100px;
       position: absolute;
-      left: -15px;
-      color: $brand-primary-colour;
-      top: -25px;
-      opacity: .2;
+      left: -13px;
+      color: $colour-green;
+      top: -23px;
+      opacity: .4;
       line-height: 1;
     }
 
     &:first-letter {
       font-size: 150%;
       font-weight: bold;
-      color: #666;
     }
   }
 
   &__thumbnail {
     float: right;
     margin: 0 0 20px 20px;
-    border: 10px solid #fff;
+    border: 10px solid $colour-white;
     border-radius: 120px;
   }
 
   &__tags {
     margin-top: 20px;
     padding-top: 10px;
-    border-top: 1px solid rgba($brand-primary-colour, .1);
+    border-top: 1px solid rgba($colour-coral, .1);
   }
 
   &__tag {

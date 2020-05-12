@@ -45,7 +45,7 @@ body {
   margin: 0;
   font-size: 14px;
   font-family: "Open Sans";
-  color: $brand-secondary-colour;
+  color: $colour-grey-dark;
 }
 
 * {
@@ -55,18 +55,18 @@ body {
 }
 
 header {
-  background-color: $brand-primary-colour;
-  color: #fff;
+  background-color: $colour-coral;
+  color: $colour-white;
 }
 
 main {
-  background-image: linear-gradient(to bottom right, #fff, #c1c1c1);
+  background-image: linear-gradient(to bottom right, $colour-white, $colour-grey-light);
 }
 
 .footer {
-  background-color: $brand-secondary-colour;
+  background-color: $colour-grey-dark;
   padding: 20px 0;
-  color: #fff;
+  color: $colour-white;
 
   &__copyright {
     display: inline-block;
@@ -114,7 +114,7 @@ img {
   }
 
   a {
-    fill: $brand-primary-colour;
+    fill: $colour-coral;
   }
 
   &-header {
@@ -122,7 +122,7 @@ img {
     text-align: right;
 
     a {
-      fill: #dddddd;
+      fill: #e5e5e5;
     }
   }
 }
