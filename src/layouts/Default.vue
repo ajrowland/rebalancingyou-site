@@ -60,7 +60,7 @@ header {
 }
 
 main {
-  background-image: linear-gradient(to bottom right, #c1c1c1, #fff);
+  background-image: linear-gradient(to bottom right, #fff, #c1c1c1);
 }
 
 .footer {
