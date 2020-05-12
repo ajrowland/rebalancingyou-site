@@ -17,7 +17,7 @@
   display: block;
   margin: 20px;
   background: rgba(255, 255, 255, .6);
-  border-bottom: 10px solid lighten($brand-primary-colour, 10%);
+  border-bottom: 10px solid #c1c1c1;//$brand-primary-colour;//#b6c649;//lighten($brand-primary-colour, 10%);
   background-size: cover;
   background-repeat: no-repeat;
   color: $brand-secondary-colour;

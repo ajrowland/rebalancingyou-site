@@ -60,7 +60,7 @@ header {
 }
 
 main {
-  background-image: linear-gradient(to bottom right, rgba($brand-primary-colour, .8), #fff);
+  background-image: linear-gradient(to bottom right, #c1c1c1, #fff);
 }
 
 .footer {
@@ -122,7 +122,7 @@ img {
     text-align: right;
 
     a {
-      fill: #c3c0c0;
+      fill: #dddddd;
     }
   }
 }
