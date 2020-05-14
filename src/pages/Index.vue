@@ -24,7 +24,7 @@
 
 <page-query>
 {
-  photos: allInstagramPhoto {
+  photos: allInstagramPhoto(sortBy: "taken_at_timestamp") {
     edges {
       node {
         display_url
