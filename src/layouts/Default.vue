@@ -127,13 +127,7 @@ img {
   }
 }
 
-@media screen and (min-height: 480px) {
-  img {
-    display: inline-block;
-  }
-}
-
-@media screen and (min-width: 640px) {
+@include mq($from: tablet) {
   body {
     font-size: 18px;
   }
@@ -158,10 +152,10 @@ img {
 
   .social {
     width: -10px;
-  }
 
-  .social li {
-    width: 45px;
+    li {
+      width: 45px;
+    }
   }
 
   .social-header {

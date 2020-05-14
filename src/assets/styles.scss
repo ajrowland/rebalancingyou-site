@@ -1,5 +1,14 @@
+@import '~sass-mq';
+
 $colour-coral:      #d16666;
 $colour-green:      #b6c649;
 $colour-grey-dark:  #2c4251;
 $colour-grey-light: #c1c1c1;
 $colour-white:      #ffffff;
+
+$mq-breakpoints: (
+  mobile:  320px,
+  tablet:  740px,
+  desktop: 980px,
+  wide:    1300px
+);

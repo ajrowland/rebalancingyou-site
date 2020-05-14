@@ -59,8 +59,12 @@
     display: none;
   }
 
-  @media screen and (min-width: 640px) {
+  @include mq($from: tablet) {
     border-width: 20px;
+    flex: 1 0 calc(40% - 20px);
+  }
+
+  @include mq($from: desktop) {
     flex: 1 0 calc(25% - 20px);
   }
 
