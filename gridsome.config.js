@@ -28,6 +28,13 @@ module.exports = {
       }
     }
   ],
+  css: {
+    loaderOptions: {
+      scss: {
+        prependData: '$env: ' + process.env.NODE_ENV + ';'
+      }
+    }
+  },
   chainWebpack (config) {
     // Load variables for all vue-files
     const types = ['vue-modules', 'vue', 'normal-modules', 'normal']
