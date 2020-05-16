@@ -18,7 +18,7 @@ function addStyleResource (rule) {
 
 module.exports = {
   siteName: 'Rebalancing You',
-  siteDescription: 'Energise, restore, nurish.',
+  siteDescription: 'ENERGISE, RESTORE, NOURISH.',
   siteUrl: 'https://www.rebalancingyou.com',
   templates: {
     Article: [

@@ -1,5 +1,5 @@
 <template>
-  <a class="article-summary" :href="article.path" title="See full article">
+  <g-link class="article-summary" :to="article.path" title="See full article">
     <div class="article-summary__inner">
       <time class="article-summary__date" v-html="article.date" />
       <div class="article-summary__text">
@@ -7,7 +7,7 @@
       </div>
       <img class="article-summary__thumbnail" :src="article.cover_image.src" alt="Article thumbnail">
     </div>
-  </a>
+  </g-link>
 </template>
 
 <script>
