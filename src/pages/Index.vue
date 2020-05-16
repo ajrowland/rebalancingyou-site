@@ -1,13 +1,13 @@
 <template>
   <Layout>
-    <section class="photos">
+    <div class="photos">
       <div class="container">
         <div class="photos__container">
           <article-summary v-for="article in $page.articles.edges" :key="article.node.id" :article="article.node" />
           <instagram-post v-for="post in $page.photos.edges" :key="post.node.id" :post="post.node" />
         </div>
       </div>
-    </section>
+    </div>
   </Layout>
 </template>
 
