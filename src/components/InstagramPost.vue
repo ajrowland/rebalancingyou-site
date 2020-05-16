@@ -6,7 +6,7 @@
         {{text}}
       </div>
       <div class="photo__tags" v-if="tags">
-        <a class="photo__tag" v-for="(tag, i) in tags" :key="i" :href="`https://www.instagram.com/explore/tags/${tag.substr(1)}/`" rel="noopener" target="_blank" v-html="tag" />
+        <div class="photo__tag" v-for="(tag, i) in tags" :key="i" v-html="tag" />
       </div>
     </div>
   </a>

@@ -3,9 +3,9 @@
     <div class="article-summary__inner">
       <time class="article-summary__date" v-html="article.date" />
       <div class="article-summary__text">
-        <p>{{article.introduction}}</p>
+        <p v-html="article.introduction" />
       </div>
-      <img class="article-summary__thumbnail" :src="article.cover_image.src" alt="Article thumbnail">
+      <g-image class="article-summary__thumbnail" :src="article.cover_image.src" alt="Article thumbnail" />
     </div>
   </g-link>
 </template>
