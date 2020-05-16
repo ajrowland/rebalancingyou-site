@@ -19,15 +19,39 @@ function addStyleResource (rule) {
 module.exports = {
   siteName: 'Rebalancing You',
   siteDescription: 'Energise, restore, nurish.',
+  siteUrl: 'https://www.rebalancingyou.com',
+  templates: {
+    Article: [
+      {
+        path: '/article/:title',
+        component: './src/templates/Article.vue'
+      }
+    ]
+  },
   plugins: [
     {
       use: '@zefman/gridsome-source-instagram',
       options: {
-        username: 'rebalancingyou', // Instagram username
-        typeName: 'InstagramPhoto' // The GraphQL type you want the photos to be added under. Defaults to InstagramPhoto
+        username: 'rebalancingyou',
+        typeName: 'InstagramPhoto'
+      }
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        typeName: 'Article',
+        baseDir: './content/articles',
+        pathPrefix: '/articles',
+        path: '*.md'
       }
     }
   ],
+  transformers: {
+    remark: {
+      externalLinksTarget: '_blank',
+      externalLinksRel: ['nofollow', 'noopener', 'noreferrer']
+    }
+  },
   css: {
     loaderOptions: {
       scss: {

@@ -17,12 +17,13 @@
   display: block;
   margin: 20px;
   background: rgba(255, 255, 255, .6);
-  border-bottom: 10px solid $colour-grey-light;
+  border-bottom: 4px solid $colour-grey-light;
   background-size: cover;
   background-repeat: no-repeat;
   color: $colour-grey-dark;
   text-decoration: none;
   transition: transform .2s ease-in-out;
+  width: 100%;
 
   &:nth-child(odd) {
     min-height: 250px;
@@ -60,7 +61,6 @@
   }
 
   @include mq($from: tablet) {
-    border-width: 20px;
     flex: 1 0 calc(40% - 20px);
   }
 
@@ -106,6 +106,13 @@
     margin: 0 0 20px 20px;
     border: 10px solid $colour-white;
     border-radius: 120px;
+    max-width: 80px;
+    border-radius: 60px;
+
+    @include mq($from: tablet) {
+      max-width: 120px;
+      border-radius: 80px;
+    }
   }
 
   &__tags {
