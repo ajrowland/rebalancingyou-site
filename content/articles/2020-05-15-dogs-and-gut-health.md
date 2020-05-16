@@ -27,13 +27,13 @@ Your home environment is full of different types of bacteria and microorganisms 
 
 Just like us humans have our own unique skin and gut microbiomes, so do our dogs. Our dogs share our homes and the spaces we live in. It makes perfect sense that some of their unique microbes will be hanging around just waiting to make **best friends** with our unique microbes.
 
-That means that as well as your microbes you also have some of your dogs. In fact, one study found that microbial communities on adult skin were more similar to those of their own dogs than to other dogs. The researchers even went as far as to say that they could pick a dog out of a crowd based solely on microbiomes. [<sup>1</sup>](#references)
+That means that as well as your microbes you also have some of your dogs. In fact, one study found that microbial communities on adult skin were more similar to those of their own dogs than to other dogs. The researchers even went as far as to say that they could pick a dog out of a crowd based solely on microbiomes. [<sup>1</sup>](#ref1)
 
 You see, dogs love to play outside. They roll around in the grass and the mud, investigating the outside world by sniffing and licking. Then come back inside and roll around on the bed or the sofa and sniff and lick bringing the outside in.
 
-Now this might be something that makes you go urgh! It’s actually really good for your health and the health of your children, and can actually play a part in training your immune system to recognise and react appropriately to things like dust and pollen. [<sup>2</sup>](#references)
+Now this might be something that makes you go urgh! It’s actually really good for your health and the health of your children, and can actually play a part in training your immune system to recognise and react appropriately to things like dust and pollen. [<sup>2</sup>](#ref2)
 
-In fact, children who have pets or spend time around animals are less likely to have **immune reactions** than those who don’t. [<sup>3</sup>](#references)
+In fact, children who have pets or spend time around animals are less likely to have **immune reactions** than those who don’t. [<sup>3</sup>](#ref3)
 
 Going back to diversity, you can see that owning a dog means you are exposed to more types of bacteria which means you are more likely to have a balanced microbiome and a more robust immune system.
 
@@ -41,8 +41,8 @@ So, the next time your dog comes bounding in from outside with muddy paws and li
 
 ---
 
-1. Fujimura, K. et al. (2013) ‘House dust exposure mediates gut microbiome Lactobacillus enrichment and airway immune defense against allergens and virus infection’, Proceedings of the National Academy of Sciences, 111(2), pp.805-810. doi: 10.1073/pnas.1310750111
+1. <a id="ref1"></a>Fujimura, K. et al. (2013) ‘House dust exposure mediates gut microbiome Lactobacillus enrichment and airway immune defense against allergens and virus infection’, Proceedings of the National Academy of Sciences, 111(2), pp.805-810. doi: 10.1073/pnas.1310750111
 
-2. Fujimura, K.E., Johnson, C.C., Ownby, D.R., Cox, M.J., Lynch, S.V. (2010). ‘Man's Best Friend? The Effect of Pet Ownership on House Dust Microbial Communities’, The Journal of Allergy and Clinical Immunology 126(2). doi: 10.1016/j.jaci.2010.05.04
+2. <a id="ref2"></a>Fujimura, K.E., Johnson, C.C., Ownby, D.R., Cox, M.J., Lynch, S.V. (2010). ‘Man's Best Friend? The Effect of Pet Ownership on House Dust Microbial Communities’, The Journal of Allergy and Clinical Immunology 126(2). doi: 10.1016/j.jaci.2010.05.04
 
-3. Stein, M. M., Hrusch, C. L., Gozdz, J., Igartua, C., Pivniouk, V., Murray, S. E., . . . Sperling, A. I. (2016). Innate Immunity and Asthma Risk in Amish and Hutterite Farm Children. New England Journal of Medicine, 375(5), 411-421.
+3. <a id="ref3"></a>Stein, M. M., Hrusch, C. L., Gozdz, J., Igartua, C., Pivniouk, V., Murray, S. E., . . . Sperling, A. I. (2016). Innate Immunity and Asthma Risk in Amish and Hutterite Farm Children. New England Journal of Medicine, 375(5), 411-421.

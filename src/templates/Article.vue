@@ -17,7 +17,6 @@
           <div v-html="$page.article.content" />
           <p class="article__back"><g-link to="/" title="Return to home">&#x27F5; Back</g-link></p>
         </div>
-        <a id="references"></a>
       </div>
     </article>
   </Layout>
