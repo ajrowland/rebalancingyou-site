@@ -32,7 +32,7 @@
         path
         date (format: "D. MMMM YYYY")
         introduction
-        cover_image (width: 1200, height: 500, blur: 10)
+        cover_image (width: 800, height: 375, blur: 10)
         cover_image_alt
       }
     }
