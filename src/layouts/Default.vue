@@ -116,7 +116,7 @@ h2 {
     text-align: right;
 
     a {
-      fill: #e5e5e5;
+      fill: $colour-white;
     }
   }
 }
