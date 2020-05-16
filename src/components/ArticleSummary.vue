@@ -1,9 +1,9 @@
 <template>
-  <g-link class="article-summary" :to="article.path" title="See full article">
+  <g-link class="article-summary" :to="article.path" title="Read full article">
     <div class="article-summary__inner">
       <div class="article-summary__date" v-html="article.date" />
       <div class="article-summary__text">
-        <p v-html="article.introduction" />
+        <p>{{article.introduction}} <span class="article-summary__read-more">Read more &#x27F6;</span></p>
       </div>
       <g-image class="article-summary__thumbnail" :src="article.cover_image.src" alt="Article thumbnail" />
     </div>
@@ -18,6 +18,8 @@ export default {
 
 <style lang="scss">
 .article-summary {
+  $root: &;
+
   display: block;
   margin: 20px;
   border-bottom: 4px solid $colour-green;
@@ -86,6 +88,20 @@ export default {
     p:first-letter {
       font-size: 150%;
       font-weight: bold;
+    }
+  }
+
+  &__read-more {
+    color: $colour-green;
+    margin-left: 10px;
+    transition: margin .2s ease-in-out;
+
+    @include mq($from: tablet) {
+      margin-left: 20px;
+    }
+
+    #{$root}:hover & {
+      margin-left: 30px;
     }
   }
 

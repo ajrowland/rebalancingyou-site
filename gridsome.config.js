@@ -18,7 +18,7 @@ function addStyleResource (rule) {
 
 module.exports = {
   siteName: 'Rebalancing You',
-  siteDescription: 'ENERGISE, RESTORE, NOURISH.',
+  siteDescription: 'ENERGISE, RESTORE, NOURISH. I\'m studying with the renowned Institute for Optimum Nutrition and will qualify next year. Until then, this is a place to inspire and share healthful information, tips, tricks and recipes. I hope to energise, restore and nourish your body mind and soul!',
   siteUrl: 'https://www.rebalancingyou.com',
   templates: {
     Article: [

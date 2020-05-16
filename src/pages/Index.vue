@@ -52,6 +52,10 @@
       }
     }
   }
+  metadata {
+    siteUrl
+    siteDescription
+  }
 }
 </page-query>
 
@@ -67,6 +71,32 @@ export default {
   metaInfo: {
     title: 'Home',
     description: 'Energise, replenish, nurish.'
+  },
+  metaInfo: function () {
+    const { siteUrl, siteDescription } = this.$page.metadata
+    const title = 'Rebalancing You. Emma Rowland nutrition.'
+    const imageUrl = `${siteUrl}/share.jpg`
+
+    const metaData = {
+      title: title,
+      meta: [
+        { name: 'description', content: siteDescription },
+        { name: 'twitter:card', content: 'summary_large_image' },
+        { name: 'twitter:description', content: siteDescription },
+        { name: 'twitter:title', content: title },
+        { name: 'twitter:site', content: '@rebalancingyou' },
+        { name: 'twitter:creator', content: '@rebalancingyou' },
+        { property: 'og:type', content: 'article' },
+        { property: 'og:title', content: title },
+        { property: 'og:description', content: siteDescription },
+        { property: 'og:url', content: siteUrl },
+        { name: 'twitter:image', content: imageUrl },
+        { property: 'og:image', content: imageUrl }
+      ],
+      //script: [{ src: 'https://platform.twitter.com/widgets.js', async: true }]
+    }
+
+    return metaData
   }
 }
 </script>

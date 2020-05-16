@@ -24,8 +24,6 @@
 
 <script>
 export default {
-  components: {
-  },
   metaInfo: function () {
     const { siteUrl } = this.$page.metadata
 
@@ -43,7 +41,7 @@ export default {
         { property: 'og:description', content: this.$page.article.description },
         { property: 'og:url', content: `${siteUrl}${this.$page.article.path}` }
       ],
-      script: [{ src: 'https://platform.twitter.com/widgets.js', async: true }]
+      //script: [{ src: 'https://platform.twitter.com/widgets.js', async: true }]
     }
 
     if (this.$page.article.cover_image) {
