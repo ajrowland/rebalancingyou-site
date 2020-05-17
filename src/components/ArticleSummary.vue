@@ -1,7 +1,7 @@
 <template>
   <g-link class="article-summary" :to="article.path" title="Read full article">
     <div class="article-summary__inner">
-      <div class="article-summary__date" v-html="article.date" />
+      <div class="article-summary__info">{{article.date}}. <strong>{{article.timeToRead}} min read.</strong></div>
       <div class="article-summary__text">
         <p>{{article.introduction}} <span class="article-summary__read-more">Read more &#x27F6;</span></p>
       </div>
@@ -43,9 +43,8 @@ export default {
     height: 100%;
   }
 
-  &__date {
+  &__info {
     font-size: .8rem;
-    font-weight: bold;
     position: absolute;
     top: 0;
     right: 0;
@@ -93,11 +92,14 @@ export default {
 
   &__read-more {
     color: $colour-green;
-    margin-left: 10px;
-    transition: margin .2s ease-in-out;
+    display: block;
+    white-space: nowrap;
+    margin-top: 5px;
 
     @include mq($from: tablet) {
       margin-left: 20px;
+      display: inline;
+      transition: margin .2s ease-in-out;
     }
 
     #{$root}:hover & {

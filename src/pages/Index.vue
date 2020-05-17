@@ -30,6 +30,7 @@
         title
         path
         date (format: "D. MMMM YYYY")
+        timeToRead
         introduction
         cover_image (width: 800, height: 375, blur: 10)
         cover_image_alt

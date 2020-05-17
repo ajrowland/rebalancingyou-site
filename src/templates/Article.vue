@@ -3,7 +3,7 @@
     <article class="article">
       <div class="container">
         <div class="article__header">
-          <time class="article__date">{{ $page.article.date }}</time>
+          <div class="article__info">{{ $page.article.date }}. <strong>{{ $page.article.timeToRead }} min read.</strong></div>
           <h3 class="article__title">
             {{ $page.article.title }}
           </h3>
@@ -97,7 +97,7 @@ query Article ($id: ID!) {
     }
   }
 
-  &__date {
+  &__info {
     font-size: .8rem;
   }
 
@@ -106,6 +106,7 @@ query Article ($id: ID!) {
     font-size: 18px;
     position: relative;
     line-height: 2rem;
+    margin: 1.6rem 0;
 
     @include mq($from: tablet) {
       width: 70%;
