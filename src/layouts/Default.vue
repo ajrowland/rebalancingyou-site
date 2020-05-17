@@ -104,15 +104,16 @@ h2 {
 
   li {
     display: inline-block;
-    width: 30px;
+    width: 48px;
   }
 
   a {
     fill: $colour-coral;
+    display: block;
   }
 
   &-header {
-    margin-top: -30px;
+    margin-top: -48px;
     text-align: right;
 
     a {
