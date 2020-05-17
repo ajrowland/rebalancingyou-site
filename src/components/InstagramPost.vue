@@ -1,5 +1,5 @@
 <template>
-  <a v-if="display" class="photo" :style="`background-image:url(${post.display_url})`" :href="`https://www.instagram.com/p/${post.shortcode}`" rel="noopener" target="_blank" title="Visit post on Instagram">
+  <a v-if="display" class="photo" :style="`background-image:url(${post.thumbnail_src})`" :href="`https://www.instagram.com/p/${post.shortcode}`" rel="noopener" target="_blank" title="Visit post on Instagram">
     <div class="photo__inner">
       <div class="photo__text">
         <img class="photo__thumbnail" :src="post.thumbnail_src" alt="Post thumbnail">
