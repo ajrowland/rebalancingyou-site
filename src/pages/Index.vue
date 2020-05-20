@@ -68,10 +68,6 @@ export default {
     ArticleSummary: ArticleSummary,
     InstagramPost: InstagramPost
   },
-  metaInfo: {
-    title: 'Home',
-    description: 'Energise, replenish, nurish.'
-  },
   metaInfo: function () {
     const { siteUrl, siteDescription } = this.$page.metadata
     const title = 'Rebalancing You. Emma Rowland nutrition.'
