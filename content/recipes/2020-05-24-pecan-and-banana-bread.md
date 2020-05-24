@@ -7,7 +7,7 @@ cover_image: ./images/banana-bread-1.jpg
 cover_image_alt: Banana bread
 additional_image_1:
 additional_image_1_alt:
-description: "Buckwheat, Pecan and Banana Bread"
+description: "It's super filling and packed full of good fats which will keep you full and stabilise blood sugar especially important for people with type 2 and pre diabetes. Great for breakfast or as an afternoon snack."
 introduction: "It's super filling and packed full of good fats which will keep you full and stabilise blood sugar especially important for people with type 2 and pre diabetes. Great for breakfast or as an afternoon snack."
 ingredients:
   - 150g ground almonds

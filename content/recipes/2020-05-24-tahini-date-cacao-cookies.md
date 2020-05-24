@@ -7,7 +7,7 @@ cover_image: ./images/cookies-1.jpg
 cover_image_alt: Tahini, Date & Cacao Cookies
 additional_image_1: ./images/cookies-2.jpg
 additional_image_1_alt: Tray of cookies
-description: "Tahini, Date & Cacao Cookies"
+description: "Nothing beats a cuppa and a bit of homemaking! These cookies are super delicious and a good source of protein, fibre and energy giving B vitamins."
 introduction: "Nothing beats a cuppa and a bit of homemaking! These cookies are super delicious and a good source of protein, fibre and energy giving B vitamins."
 ingredients:
   - 110g tahini paste

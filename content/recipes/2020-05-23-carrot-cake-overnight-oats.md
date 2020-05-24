@@ -7,7 +7,7 @@ cover_image: ./images/carrot-cake-1.jpg
 cover_image_alt: Carrot cake ingredients.
 additional_image_1: ./images/carrot-cake-2.jpg
 additional_image_1_alt: Carrot cake ingredients.
-description: "Carrot cake overnight oats"
+description: "A great alternative to traditional porridge. A perfect ready made breakfast, that will keep you feeling full all morning."
 introduction: "A great alternative to traditional porridge. A perfect ready made breakfast, that will keep you feeling full all morning."
 ingredients:
   - 35g gluten free porridge oats
