@@ -95,14 +95,6 @@ export default {
     display: block;
     white-space: nowrap;
     margin-top: 5px;
-
-    @include mq($from: tablet) {
-      transition: margin .2s ease-in-out;
-    }
-
-    #{$root}:hover & {
-      margin-left: 30px;
-    }
   }
 
   &__thumbnail {
