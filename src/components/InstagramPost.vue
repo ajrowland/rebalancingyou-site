@@ -17,7 +17,7 @@
   display: block;
   margin: 20px;
   background: rgba(255, 255, 255, .6);
-  border-bottom: 4px solid $colour-grey-light;
+  border-bottom: 4px solid $colour-green;
   background-size: cover;
   background-repeat: no-repeat;
   color: $colour-grey-dark;
@@ -25,8 +25,8 @@
   transition: transform .2s ease-in-out;
   width: 100%;
 
-  &:nth-child(odd) {
-    min-height: 250px;
+  //&:nth-child(odd) {
+    min-height: 350px;
 
     .photo__inner {
       background: none;
@@ -50,7 +50,7 @@
     .photo__tags {
       display: none;
     }
-  }
+  //}
 
   &:hover {
     transform: scale(1.02);
@@ -144,7 +144,7 @@ export default {
   },
   created() {
     const tokens = this.post.edge_media_to_caption.edges[0].node.text.split(' ')
-    this.text = tokens.filter(t => !t.startsWith('#')).slice(0, 15).join(' ') + '...'
+    this.text = tokens.filter(t => !t.startsWith('#')).slice(0, 10).join(' ') + '...'
     this.tags = tokens.filter(t => t.startsWith('#') && t.length > 1)
     this.display = this.tags.includes('#rebalancingyou')
   }

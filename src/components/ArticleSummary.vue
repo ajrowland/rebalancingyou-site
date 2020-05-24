@@ -1,7 +1,7 @@
 <template>
   <g-link class="article-summary" :to="article.path" title="Read full article">
     <div class="article-summary__inner">
-      <div class="article-summary__info">{{article.date}}. <strong>{{article.timeToRead}} min read.</strong></div>
+      <div class="article-summary__info">{{article.date}}<!-- .<strong>{{article.timeToRead}} min read.</strong>--></div>
       <div class="article-summary__text">
         <p>{{article.introduction}} <span class="article-summary__read-more">Read more &#x27F6;</span></p>
       </div>
@@ -35,7 +35,7 @@ export default {
   }
 
   @include mq($from: desktop) {
-    flex: 1 0 calc(60% - 40px);
+    flex: 1 0 calc(25% - 40px);
   }
 
   &__inner {
@@ -60,7 +60,7 @@ export default {
     position: absolute;
     quotes: "“" "”" "“" "”";
     padding: 80px 20px 20px 20px;
-    background: linear-gradient(to top, rgba($colour-white, 1) 30%,rgba($colour-white, .7) 63%,rgba($colour-white, 0) 100%);
+    background: linear-gradient(to top, rgba($colour-white, 1) 45%,rgba($colour-white, .7) 63%,rgba($colour-white, 0) 100%);
 
     p {
       position: relative;
@@ -97,8 +97,6 @@ export default {
     margin-top: 5px;
 
     @include mq($from: tablet) {
-      margin-left: 20px;
-      display: inline;
       transition: margin .2s ease-in-out;
     }
 

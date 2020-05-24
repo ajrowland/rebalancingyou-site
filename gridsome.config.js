@@ -26,6 +26,12 @@ module.exports = {
         path: '/article/:title',
         component: './src/templates/Article.vue'
       }
+    ],
+    Recipe: [
+      {
+        path: '/recipe/:title',
+        component: './src/templates/Recipe.vue'
+      }
     ]
   },
   plugins: [
@@ -44,12 +50,22 @@ module.exports = {
         pathPrefix: '/articles',
         path: '*.md'
       }
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        typeName: 'Recipe',
+        baseDir: './content/recipes',
+        pathPrefix: '/recipes',
+        path: '*.md'
+      }
     }
   ],
   transformers: {
     remark: {
       externalLinksTarget: '_blank',
-      externalLinksRel: ['nofollow', 'noopener', 'noreferrer']
+      externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
+      plugins: ['remark-attr']
     }
   },
   css: {

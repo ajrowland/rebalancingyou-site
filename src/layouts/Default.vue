@@ -72,6 +72,7 @@ main {
   margin: auto;
   max-width: 1200px;
   padding: 20px;
+  position: relative;
 }
 
 h1,
