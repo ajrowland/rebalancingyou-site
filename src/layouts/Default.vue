@@ -142,8 +142,6 @@ h2 {
   }
 
   .social {
-    width: -10px;
-
     li {
       width: 45px;
     }

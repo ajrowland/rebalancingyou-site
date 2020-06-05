@@ -3,6 +3,11 @@
     <section class="section section--articles">
       <div class="container">
         <h2>Articles</h2>
+        <!--
+        <div class="section__container">
+          <item-summary v-for="article in $page.articles.edges" :key="article.node.id" :v-bind="{...article.node}" :title="article.node.title" />
+        </div>
+        -->
         <div class="section__container">
           <article-summary v-for="article in $page.articles.edges" :key="article.node.id" :article="article.node" />
         </div>
@@ -56,26 +61,23 @@
 
 <page-query>
 {
-  recipes: allRecipe(sortBy: "date") {
-    edges {
-      node {
-        title
-        path
-        date (format: "D. MMMM YYYY")
-        timeToRead
-        introduction
-        cover_image (width: 400, height: 375, blur: 10)
-        cover_image_alt
-      }
-    }
-  }
   articles: allArticle(sortBy: "date") {
     edges {
       node {
         title
         path
-        date (format: "D. MMMM YYYY")
-        timeToRead
+        label: date (format: "D. MMMM YYYY")
+        introduction
+        image: cover_image (width: 400, height: 375, blur: 10)
+        alt: cover_image_alt
+      }
+    }
+  }
+  recipes: allRecipe(sortBy: "date", limit: 3) {
+    edges {
+      node {
+        title
+        path
         introduction
         cover_image (width: 400, height: 375, blur: 10)
         cover_image_alt
@@ -105,12 +107,14 @@
 </page-query>
 
 <script>
+import ItemSummary from '../components/ItemSummary'
 import RecipeSummary from '../components/RecipeSummary'
 import ArticleSummary from '../components/ArticleSummary'
 import InstagramPost from '../components/InstagramPost'
 
 export default {
   components: {
+    ItemSummary,
     RecipeSummary,
     ArticleSummary,
     InstagramPost

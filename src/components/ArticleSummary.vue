@@ -1,11 +1,11 @@
 <template>
   <g-link class="article-summary" :to="article.path" title="Read full article">
     <div class="article-summary__inner">
-      <div class="article-summary__info">{{article.date}}<!-- .<strong>{{article.timeToRead}} min read.</strong>--></div>
+      <div class="article-summary__info">{{article.label}}</div>
       <div class="article-summary__text">
-        <p>{{article.introduction}} <span class="article-summary__read-more">Read more &#x27F6;</span></p>
+        <h3>{{article.title}} <span class="article-summary__read-more">Read more &#x27F6;</span></h3>
       </div>
-      <g-image class="article-summary__thumbnail" :src="article.cover_image.src" alt="Article thumbnail" />
+      <g-image class="article-summary__thumbnail" :src="article.image.src" alt="Article thumbnail" />
     </div>
   </g-link>
 </template>
@@ -29,6 +29,7 @@ export default {
   text-decoration: none;
   transition: transform .2s ease-in-out;
   overflow: hidden;
+  width: 100%;
 
   &:hover {
     transform: scale(1.02);
@@ -58,35 +59,25 @@ export default {
     left: 0;
     right: 0;
     position: absolute;
-    quotes: "“" "”" "“" "”";
     padding: 80px 20px 20px 20px;
     background: linear-gradient(to top, rgba($colour-white, 1) 45%,rgba($colour-white, .7) 63%,rgba($colour-white, 0) 100%);
 
-    p {
-      position: relative;
+    h3 {
       margin: 0;
+      font-weight: normal;
+      font-size: 21px;
+
+      span {
+        font-size: 16px;
+      }
 
       @include mq($from: tablet) {
-        font-size: 22px;
+        font-size: 34px;
+
+        span {
+          font-size: 22px;
+        }
       }
-    }
-
-    p:before {
-      content: open-quote;
-      display: inline-block;
-      font-weight: bold;
-      font-size: 100px;
-      position: absolute;
-      left: -13px;
-      color: $colour-green;
-      top: -23px;
-      opacity: .4;
-      line-height: 1;
-    }
-
-    p:first-letter {
-      font-size: 150%;
-      font-weight: bold;
     }
   }
 

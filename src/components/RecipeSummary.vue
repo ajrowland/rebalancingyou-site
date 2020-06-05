@@ -3,7 +3,7 @@
     <div class="recipe-summary__inner">
       <!--<div class="recipe-summary__info">Recipe</div>-->
       <div class="recipe-summary__text">
-        <p>{{recipe.title}}<!-- <span class="recipe-summary__read-more">View recipe &#x27F6;</span>--></p>
+        <h3>{{recipe.title}}</h3>
       </div>
       <g-image class="recipe-summary__thumbnail" :src="recipe.cover_image.src" alt="Recipe thumbnail" />
     </div>
@@ -29,13 +29,18 @@ export default {
   text-decoration: none;
   transition: transform .2s ease-in-out;
   overflow: hidden;
+  width: 100%;
 
   &:hover {
     transform: scale(1.02);
   }
 
+  @include mq($from: tablet) {
+    flex: 1 0 calc(40% - 20px);
+  }
+
   @include mq($from: desktop) {
-    flex: 1 0 calc(25% - 40px);
+    flex: 1 0 calc(25% - 20px);
   }
 
   &__inner {
@@ -61,13 +66,11 @@ export default {
     padding: 20px;
     background: $colour-white;
 
-    p {
+    h3 {
       position: relative;
       margin: 0;
-
-      @include mq($from: tablet) {
-        font-size: 22px;
-      }
+      font-size: 21px;
+      font-weight: normal;
     }
   }
 
