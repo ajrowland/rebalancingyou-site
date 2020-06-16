@@ -1,5 +1,5 @@
 ---
-title: Oral health and overall health
+title: Oral Health and Overall Health
 date: 2020-05-19
 published: true
 tags: ['Tag 1', 'tag 2']

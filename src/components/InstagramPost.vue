@@ -3,7 +3,7 @@
     <div class="photo__inner">
       <div class="photo__text">
         <img class="photo__thumbnail" :src="post.thumbnail_src" alt="Post thumbnail">
-        {{text}}
+        {{text.replace(/([\uE000-\uF8FF]|\uD83C[\uDF00-\uDFFF]|\uD83D[\uDC00-\uDDFF])/g, '')}}
       </div>
       <div class="photo__tags" v-if="tags">
         <div class="photo__tag" v-for="(tag, i) in tags" :key="i" v-html="tag" />
