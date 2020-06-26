@@ -29,6 +29,14 @@
         </div>
       </div>
     </section>
+    <section class="section section--subscribe">
+      <div class="container">
+        <h2>Subscribe</h2>
+        <div class="section__container">
+          <subscribe-form />
+        </div>
+      </div>
+    </section>
   </Layout>
 </template>
 
@@ -44,6 +52,9 @@
   &--recipes {
   }
   &--instagram {
+  }
+  &--subscribe {
+    background: $colour-grey-light;
   }
   &__container {
     margin: -10px -20px;
@@ -111,13 +122,15 @@ import ItemSummary from '../components/ItemSummary'
 import RecipeSummary from '../components/RecipeSummary'
 import ArticleSummary from '../components/ArticleSummary'
 import InstagramPost from '../components/InstagramPost'
+import SubscribeForm from '../components/SubscribeForm'
 
 export default {
   components: {
     ItemSummary,
     RecipeSummary,
     ArticleSummary,
-    InstagramPost
+    InstagramPost,
+    SubscribeForm
   },
   metaInfo: function () {
     const { siteUrl, siteDescription } = this.$page.metadata
