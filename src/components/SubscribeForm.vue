@@ -1,9 +1,8 @@
 <template>
   <div class="form form--subscribe">
     <form action="https://kitchenstars.us12.list-manage.com/subscribe/post?u=1a935104817ba5bf1a65e8186&amp;id=ba4ae16724" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-      <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
       <div>
-        <label class="form__label" for="mce-EMAIL">Email Address <span class="asterisk">*</span></label>
+        <label class="form__label" for="mce-EMAIL">Email Address <span class="form__required">*</span></label>
         <input class="form__field" type="email" value="" name="EMAIL" id="mce-EMAIL" required>
       </div>
       <div>
@@ -28,6 +27,10 @@
 <style lang="scss">
 .form {
   margin: 20px;
+
+  &__required {
+    color: $colour-coral;
+  }
 
   &__field,
   &__submit {
