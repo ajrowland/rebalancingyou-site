@@ -31,7 +31,7 @@
     </section>
     <section class="section section--subscribe">
       <div class="container">
-        <h2>Subscribe</h2>
+        <h2>Updates in your inbox</h2>
         <div class="section__container">
           <subscribe-form />
         </div>
@@ -54,7 +54,7 @@
   &--instagram {
   }
   &--subscribe {
-    background: $colour-grey-light;
+    background: $colour-white;
   }
   &__container {
     margin: -10px -20px;
