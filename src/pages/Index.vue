@@ -118,7 +118,6 @@
 </page-query>
 
 <script>
-import ItemSummary from '../components/ItemSummary'
 import RecipeSummary from '../components/RecipeSummary'
 import ArticleSummary from '../components/ArticleSummary'
 import InstagramPost from '../components/InstagramPost'
@@ -126,7 +125,6 @@ import SubscribeForm from '../components/SubscribeForm'
 
 export default {
   components: {
-    ItemSummary,
     RecipeSummary,
     ArticleSummary,
     InstagramPost,
