@@ -1,13 +1,9 @@
 <template>
   <Layout>
+    <banner heading="Some heading" image="banner.jpg" />
     <section class="section section--articles">
       <div class="container">
         <h2>Articles</h2>
-        <!--
-        <div class="section__container">
-          <item-summary v-for="article in $page.articles.edges" :key="article.node.id" :v-bind="{...article.node}" :title="article.node.title" />
-        </div>
-        -->
         <div class="section__container">
           <article-summary v-for="article in $page.articles.edges" :key="article.node.id" :article="article.node" />
         </div>
@@ -39,36 +35,6 @@
     </section>
   </Layout>
 </template>
-
-<style lang="scss">
-.section {
-  &--articles {
-    padding-top: 2rem;
-
-    h2 {
-      display: none;
-    }
-  }
-  &--recipes {
-  }
-  &--instagram {
-  }
-  &--subscribe {
-    background: $colour-white;
-  }
-  &__container {
-    margin: -10px -20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  h2 {
-    font-family: "Open Sans";
-    font-weight: normal;
-    margin: 1rem 0;
-  }
-}
-</style>
 
 <page-query>
 {
@@ -118,6 +84,7 @@
 </page-query>
 
 <script>
+import Banner from '../components/Banner'
 import RecipeSummary from '../components/RecipeSummary'
 import ArticleSummary from '../components/ArticleSummary'
 import InstagramPost from '../components/InstagramPost'
@@ -125,6 +92,7 @@ import SubscribeForm from '../components/SubscribeForm'
 
 export default {
   components: {
+    Banner,
     RecipeSummary,
     ArticleSummary,
     InstagramPost,
