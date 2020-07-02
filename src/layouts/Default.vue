@@ -82,6 +82,7 @@ body {
     & .container {
       justify-content: space-between;
       flex-direction: row;
+      padding: 60px 30px;
     }
   }
 

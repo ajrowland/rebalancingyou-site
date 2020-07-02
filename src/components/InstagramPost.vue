@@ -144,7 +144,7 @@ export default {
   },
   created() {
     const tokens = this.post.edge_media_to_caption.edges[0].node.text.split(' ')
-    this.text = tokens.filter(t => !t.startsWith('#')).slice(0, 10).join(' ') + '...'
+    this.text = tokens.filter(t => !t.startsWith('#')).slice(0, 10).join(' ').replace(/([\u2700-\u27BF]|[\uE000-\uF8FF]|\uD83C[\uDC00-\uDFFF]|\uD83D[\uDC00-\uDFFF]|[\u2011-\u26FF]|\uD83E[\uDD10-\uDDFF])/g, '') + '...'
     this.tags = tokens.filter(t => t.startsWith('#') && t.length > 1)
     this.display = this.tags.includes('#rebalancingyou')
   }
