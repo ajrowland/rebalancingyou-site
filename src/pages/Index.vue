@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <banner heading="Energise, Restore, Nourish..." image="banner.png" />
+    <banner heading="Energise,<br />Restore,<br />Nourish..." image="banner.png" />
     <section class="section section--articles">
       <div class="container">
         <h2><g-link to="/articles">Articles<span class="section__view-more">View more &#9654;</span></g-link></h2>

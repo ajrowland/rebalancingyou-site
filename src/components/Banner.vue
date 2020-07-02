@@ -1,7 +1,7 @@
 <template>
   <section class="banner" :style="`background-image:url(${require(`@/assets/${this.image}`)})`">
     <div class="container">
-      <h2 class="banner__heading" v-html="heading" :style="`width:${this.width}`" />
+      <h2 class="banner__heading" v-html="heading" />
     </div>
   </section>
 </template>
@@ -22,6 +22,7 @@
   .container {
     width: 100%;
     height: 100%;
+    display: block;
   }
 
   &__heading {
@@ -33,9 +34,9 @@
     font-size: 30px;
 
     @include mq($from: tablet) {
-      width: 30%;
       display: inline-block;
-      font-size: 30px;
+      font-size: 60px;
+      min-width: 30%;
     }
   }
 }
@@ -43,6 +44,6 @@
 
 <script>
 export default {
-  props: ['heading', 'image', 'width']
+  props: ['heading', 'image']
 }
 </script>
