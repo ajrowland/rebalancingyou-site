@@ -22,7 +22,7 @@ export default {
 
   display: block;
   margin: 20px;
-  //border-bottom: 4px solid $colour-green;
+  border-bottom: 4px solid $colour-green;
   background-size: cover;
   background-repeat: no-repeat;
   color: $colour-grey-dark;
@@ -82,7 +82,6 @@ export default {
   }
 
   &__read-more {
-    font-family: 'Bree Serif';
     color: $colour-green;
     display: block;
     white-space: nowrap;

@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <banner heading="Energise, restore, nourish..." image="banner.png" />
+    <banner heading="Energise, Restore, Nourish..." image="banner.png" />
     <section class="section section--articles">
       <div class="container">
         <h2><g-link to="/articles">Articles<span class="section__view-more">View more &#9654;</span></g-link></h2>
@@ -22,14 +22,6 @@
         <h2><a href="https://www.instagram.com/rebalancingyou" target="_blank">Instagram<span class="section__view-more">View more &#9654;</span></a></h2>
         <div class="section__container">
           <instagram-post v-for="post in $page.photos.edges" :key="post.node.id" :post="post.node" />
-        </div>
-      </div>
-    </section>
-    <section class="section section--subscribe">
-      <div class="container">
-        <h2>Updates in your inbox</h2>
-        <div class="section__container">
-          <subscribe-form />
         </div>
       </div>
     </section>

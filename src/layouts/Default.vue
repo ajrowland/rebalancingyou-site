@@ -15,9 +15,10 @@
 
           <ul class="header__nav">
             <li><g-link to="/" >Home</g-link></li>
-            <li><g-link to="/about">About</g-link></li>
+            <!--<li><g-link to="/about">About</g-link></li>-->
             <li><g-link to="/articles">Articles</g-link></li>
             <li><g-link to="/recipes">Recipes</g-link></li>
+            <li><g-link to="/sign-up" class="button">Sign up</g-link></li>
           </ul>
         </div>
       </div>
@@ -80,32 +81,70 @@ body {
     background-color: $colour-coral;
 
     & .container {
-      justify-content: space-between;
-      flex-direction: row;
-      padding: 60px 30px;
+      @include mq($from: tablet) {
+        justify-content: space-between;
+        flex-direction: row;
+        padding: 60px 30px;
+      }
     }
   }
 
   &__nav {
-    display: inline-flex;
-    flex-direction: row;
     list-style-type: none;
-    font-size: 26px;
     font-family: "Open Sans Condensed";
     font-weight: 300;
-    margin: 0;
-    align-self: flex-end;
+    margin: 30px 0 0 0;
+    padding: 0;
+    border-bottom: 1px solid rgba($colour-white, 0.2);
+
+    @include mq($from: tablet) {
+      margin: 0;
+      align-self: flex-end;
+      display: inline-flex;
+      flex-direction: row;
+      border: 0;
+    }
+
+    li {
+      border-top: 1px solid rgba($colour-white, 0.2);
+
+      @include mq($from: tablet) {
+        border: 0;
+      }
+    }
 
     a {
       color: $colour-white;
       text-decoration: none;
-      margin: 10px;
-      transition: all  .25s ease-in-out;
-      border-bottom: 1px solid transparent;
+      margin: 10px 0;
+      font-size: 21px;
+      display: block;
+
+      @include mq($from: tablet) {
+        margin: 10px;
+        transition: all  .25s ease-in-out;
+        border-bottom: 1px solid transparent;
+        font-size: 26px;
+      }
 
       &.active--exact,
       &:hover {
         border-color: $colour-white;
+      }
+
+      &.button {
+        @include mq($from: tablet) {
+          margin-left: 10px;
+          background: $colour-grey-dark;
+          margin: 5px 0;
+          padding: 5px 10px;
+          border-radius: 4px;
+        }
+
+        &.active--exact,
+        &:hover {
+          border-color: transparent;
+        }
       }
     }
   }
@@ -136,6 +175,10 @@ h1 {
 h2 {
   font-weight: 300;
   font-size: 21px;
+}
+
+p {
+  line-height: 1.8;
 }
 
 main {
@@ -173,7 +216,6 @@ main {
   }
   &__view-more {
     font-size: 18px;
-    font-family: 'Bree Serif';
   }
 }
 

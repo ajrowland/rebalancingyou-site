@@ -180,7 +180,6 @@ query Article ($id: ID!) {
 
   &__back {
     a {
-      font-family: 'Bree Serif';
       transition: all .2s ease-in-out;
 
       &:hover {

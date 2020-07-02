@@ -1,7 +1,7 @@
 <template>
   <section class="banner" :style="`background-image:url(${require(`@/assets/${this.image}`)})`">
     <div class="container">
-      <h2 class="banner__heading" v-html="heading" />
+      <h2 class="banner__heading" v-html="heading" :style="`width:${this.width}`" />
     </div>
   </section>
 </template>
@@ -13,8 +13,11 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  min-height: 500px;
   display: flex;
+
+  @include mq($from: tablet) {
+    min-height: 500px;
+  }
 
   .container {
     width: 100%;
@@ -22,19 +25,24 @@
   }
 
   &__heading {
-    font-family: 'Bree Serif';
-    color: $colour-white;
-    display: inline-block;
-    background: rgba($colour-grey-dark, 0.4);
-    width: 30%;
+    font-family: 'Averia Serif Libre';
+    font-weight: 300;
+    color: $colour-grey-dark;
+    background: rgba($colour-white, 0.8);
     padding: 30px;
-    font-size: 60px;
+    font-size: 30px;
+
+    @include mq($from: tablet) {
+      width: 30%;
+      display: inline-block;
+      font-size: 30px;
+    }
   }
 }
 </style>
 
 <script>
 export default {
-  props: ['heading', 'image']
+  props: ['heading', 'image', 'width']
 }
 </script>
