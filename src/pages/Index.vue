@@ -1,9 +1,9 @@
 <template>
   <Layout>
-    <banner heading="Some heading" image="banner.jpg" />
+    <banner heading="Energise, restore, nourish..." image="banner.png" />
     <section class="section section--articles">
       <div class="container">
-        <h2>Articles</h2>
+        <h2><g-link to="/articles">Articles<span class="section__view-more">View more &#9654;</span></g-link></h2>
         <div class="section__container">
           <article-summary v-for="article in $page.articles.edges" :key="article.node.id" :article="article.node" />
         </div>
@@ -11,7 +11,7 @@
     </section>
     <section class="section section--recipes">
       <div class="container">
-        <h2>Recipes</h2>
+        <h2><g-link to="/recipes">Recipes<span class="section__view-more">View more &#9654;</span></g-link></h2>
         <div class="section__container">
           <recipe-summary v-for="recipe in $page.recipes.edges" :key="recipe.node.id" :recipe="recipe.node" />
         </div>
@@ -19,7 +19,7 @@
     </section>
     <section class="section section--instagram">
       <div class="container">
-        <h2>Instagram</h2>
+        <h2><a href="https://www.instagram.com/rebalancingyou" target="_blank">Instagram<span class="section__view-more">View more &#9654;</span></a></h2>
         <div class="section__container">
           <instagram-post v-for="post in $page.photos.edges" :key="post.node.id" :post="post.node" />
         </div>

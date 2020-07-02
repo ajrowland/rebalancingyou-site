@@ -22,7 +22,7 @@ export default {
 
   display: block;
   margin: 20px;
-  border-bottom: 4px solid $colour-coral;
+  //border-bottom: 4px solid $colour-coral;
   background-size: cover;
   background-repeat: no-repeat;
   color: $colour-grey-dark;

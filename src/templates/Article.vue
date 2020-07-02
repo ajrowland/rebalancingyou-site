@@ -13,9 +13,9 @@
           <g-image :src="$page.article.cover_image" :alt="$page.article.cover_image_alt" position="top" />
         </div>
         <div class="article__content">
-          <p class="article__back"><g-link to="/" title="Return to home">&#x27F5; Back</g-link></p>
+          <p class="article__back"><g-link to="/" title="Return to home">&#9664; Back</g-link></p>
           <div v-html="$page.article.content" />
-          <p class="article__back"><g-link to="/" title="Return to home">&#x27F5; Back</g-link></p>
+          <p class="article__back"><g-link to="/" title="Return to home">&#9664; Back</g-link></p>
         </div>
       </div>
     </article>
@@ -180,6 +180,7 @@ query Article ($id: ID!) {
 
   &__back {
     a {
+      font-family: 'Bree Serif';
       transition: all .2s ease-in-out;
 
       &:hover {

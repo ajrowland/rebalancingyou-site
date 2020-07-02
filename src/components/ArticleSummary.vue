@@ -3,7 +3,7 @@
     <div class="article-summary__inner">
       <div class="article-summary__info">{{article.label}}</div>
       <div class="article-summary__text">
-        <h3>{{article.title}} <span class="article-summary__read-more">Read more &#x27F6;</span></h3>
+        <h3>{{article.title}} <span class="article-summary__read-more">Read more &#9654;</span></h3>
       </div>
       <g-image class="article-summary__thumbnail" :src="article.image.src" alt="Article thumbnail" />
     </div>
@@ -22,7 +22,7 @@ export default {
 
   display: block;
   margin: 20px;
-  border-bottom: 4px solid $colour-green;
+  //border-bottom: 4px solid $colour-green;
   background-size: cover;
   background-repeat: no-repeat;
   color: $colour-grey-dark;
@@ -82,6 +82,7 @@ export default {
   }
 
   &__read-more {
+    font-family: 'Bree Serif';
     color: $colour-green;
     display: block;
     white-space: nowrap;

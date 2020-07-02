@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <banner heading="Recipes" image="banner.jpg" />
+    <banner heading="Recipes" image="banner.png" />
     <section class="section section--recipes">
       <div class="container">
         <div class="section__container">

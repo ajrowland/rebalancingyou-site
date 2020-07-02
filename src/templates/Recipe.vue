@@ -12,7 +12,7 @@
           <g-image :src="$page.recipe.cover_image" :alt="$page.recipe.cover_image_alt" position="top" />
         </div>
         <div class="recipe__content">
-          <p class="recipe__back"><g-link to="/" title="Return to home">&#x27F5; Back</g-link></p>
+          <p class="recipe__back"><g-link to="/" title="Return to home">&#9664; Back</g-link></p>
           <div v-if="$page.recipe.content" v-html="$page.recipe.content" />
           <h2>Ingredients</h2>
           <ul>
@@ -28,7 +28,7 @@
             <h2>{{$page.recipe.end.heading}}</h2>
             <p v-for="(para, i) in $page.recipe.end.text" :key="i" v-html="para" />
           </div>
-          <p class="recipe__back"><g-link to="/" title="Return to home">&#x27F5; Back</g-link></p>
+          <p class="recipe__back"><g-link to="/" title="Return to home">&#9664; Back</g-link></p>
         </div>
       </div>
     </article>
@@ -96,128 +96,3 @@ query Recipe ($id: ID!) {
   }
 }
 </page-query>
-
-<style lang="scss">
-.recipe {
-  &__header {
-     margin: 1rem 0;
-
-    @include mq($from: tablet) {
-      margin: 1rem 0 5rem 0;
-    }
-  }
-
-  &__title {
-    font-size: 30px;
-    font-weight: 700;
-    font-family: "Open Sans Condensed";
-    margin: .1rem 0;
-
-    @include mq($from: tablet) {
-      font-size: 60px;
-    }
-  }
-
-  &__info {
-    font-size: .8rem;
-  }
-
-  &__intro {
-    quotes: "“" "”" "“" "”";
-    font-size: 18px;
-    position: relative;
-    line-height: 2rem;
-    margin: 1.6rem 0;
-
-    @include mq($from: tablet) {
-      width: 70%;
-      font-size: 30px;
-      line-height: 3.4rem;
-      margin: 2rem auto;
-    }
-
-    &:before {
-      content: open-quote;
-      display: inline-block;
-      font-weight: bold;
-      color: $colour-green;
-      font-size: 60px;
-      position: absolute;
-      left: -10px;
-      top: -10px;
-      opacity: .4;
-      line-height: 1;
-
-      @include mq($from: tablet) {
-        font-size: 100px;
-        left: -32px;
-        top: -17px;
-      }
-    }
-  }
-
-  &__image {
-    margin: 1rem 0;
-
-    @include mq($from: tablet) {
-      margin: 2rem 0;
-    }
-
-    img {
-      display: inline;
-      border-bottom: 4px solid $colour-green;
-      max-width: 100%;
-    }
-  }
-
-  &__content {
-    margin: 0 auto;
-    line-height: 2rem;
-
-    @include mq($from: tablet) {
-      width: 70%;
-    }
-
-    h2 {
-      margin: 1rem 0;
-
-      @include mq($from: tablet) {
-        margin: 2rem 0;
-      }
-    }
-
-    a {
-      color: $colour-green;
-      text-decoration: none;
-
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-
-    hr {
-      border-style: solid;
-      border-color: $colour-green;
-      opacity: .4;
-    }
-
-    img {
-      width: 100%;
-      border-bottom: 4px solid $colour-green;
-      margin: 1rem 0;
-    }
-  }
-
-  &__back {
-    a {
-      transition: all .2s ease-in-out;
-
-      &:hover {
-        margin-left: -10px;
-        text-decoration: none;
-
-      }
-    }
-  }
-}
-</style>

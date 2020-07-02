@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <banner heading="Articles" image="banner.jpg" />
+    <banner heading="Articles" image="banner.png" />
     <section class="section">
       <div class="container">
         <div class="section__container">

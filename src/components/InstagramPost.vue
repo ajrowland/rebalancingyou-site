@@ -17,7 +17,7 @@
   display: block;
   margin: 20px;
   background: rgba(255, 255, 255, .6);
-  border-bottom: 4px solid $colour-green;
+  //border-bottom: 4px solid $colour-green;
   background-size: cover;
   background-repeat: no-repeat;
   color: $colour-grey-dark;

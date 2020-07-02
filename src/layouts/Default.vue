@@ -11,13 +11,13 @@
       </div>
       <div class="header__main">
         <div class="container">
-          <h1 itemprop="name"><a href="/" title="Home">Rebalancing You <span itemprop="jobTitle">Emma Rowland nutrition</span></a></h1>
+          <h1 itemprop="name"><a href="/" title="Home">Rebalancing You <span itemprop="jobTitle">Emma Rowland Nutrition</span></a></h1>
 
           <ul class="header__nav">
             <li><g-link to="/" >Home</g-link></li>
             <li><g-link to="/about">About</g-link></li>
-            <li><g-link to="/recipes">Recipes</g-link></li>
             <li><g-link to="/articles">Articles</g-link></li>
+            <li><g-link to="/recipes">Recipes</g-link></li>
           </ul>
         </div>
       </div>
@@ -162,6 +162,17 @@ main {
     font-family: "Open Sans";
     font-weight: normal;
     margin: 1rem 0;
+
+    a {
+      color: $colour-grey-dark;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+  }
+  &__view-more {
+    font-size: 18px;
+    font-family: 'Bree Serif';
   }
 }
 

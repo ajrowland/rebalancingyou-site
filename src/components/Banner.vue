@@ -12,14 +12,23 @@
   color: $colour-white;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   min-height: 500px;
+  display: flex;
+
+  .container {
+    width: 100%;
+    height: 100%;
+  }
 
   &__heading {
-    color: $colour-grey-dark;
+    font-family: 'Bree Serif';
+    color: $colour-white;
     display: inline-block;
-    background: rgba($colour-white, 0.9);
-    width: 35%;
+    background: rgba($colour-grey-dark, 0.4);
+    width: 30%;
     padding: 30px;
+    font-size: 60px;
   }
 }
 </style>
