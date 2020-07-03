@@ -118,13 +118,22 @@ body {
       text-decoration: none;
       margin: 10px 0;
       font-size: 21px;
-      display: block;
+      display: flex;
+      justify-content: space-between;
+
+      &:after {
+        content: '▸';
+      }
 
       @include mq($from: tablet) {
         margin: 10px;
         transition: all  .25s ease-in-out;
         border-bottom: 1px solid transparent;
         font-size: 26px;
+
+        &:after {
+          display: none;
+        }
       }
 
       &.active--exact,
@@ -134,11 +143,14 @@ body {
 
       &.button {
         @include mq($from: tablet) {
-          margin-left: 10px;
           background: $colour-grey-dark;
-          margin: 5px 0;
+          margin: 5px 0 5px 10px;
           padding: 5px 10px;
           border-radius: 4px;
+        }
+
+        &:after {
+          display: block;
         }
 
         &.active--exact,
