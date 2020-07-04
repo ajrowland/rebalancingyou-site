@@ -124,8 +124,11 @@ body {
     & .container {
       @include mq($from: tablet) {
         justify-content: space-between;
-        flex-direction: row;
         padding: 60px 30px;
+      }
+
+      @include mq($from: desktop) {
+        flex-direction: row;
       }
     }
   }
