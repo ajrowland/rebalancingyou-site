@@ -3,7 +3,7 @@
     <div class="article-summary__inner">
       <div class="article-summary__info">{{article.label}}</div>
       <div class="article-summary__text">
-        <h3>{{article.title}} <span class="article-summary__read-more">Read more &#x27F6;</span></h3>
+        <h3>{{article.title}} <span class="article-summary__read-more">Read more &#9654;</span></h3>
       </div>
       <g-image class="article-summary__thumbnail" :src="article.image.src" alt="Article thumbnail" />
     </div>

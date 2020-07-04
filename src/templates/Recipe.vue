@@ -12,7 +12,7 @@
           <g-image :src="$page.recipe.cover_image" :alt="$page.recipe.cover_image_alt" position="top" />
         </div>
         <div class="recipe__content">
-          <p class="recipe__back"><g-link to="/" title="Return to home">&#x27F5; Back</g-link></p>
+          <p class="recipe__back"><g-link to="/" title="Return to home">&#9664; Back</g-link></p>
           <div v-if="$page.recipe.content" v-html="$page.recipe.content" />
           <h2>Ingredients</h2>
           <ul>
@@ -28,7 +28,7 @@
             <h2>{{$page.recipe.end.heading}}</h2>
             <p v-for="(para, i) in $page.recipe.end.text" :key="i" v-html="para" />
           </div>
-          <p class="recipe__back"><g-link to="/" title="Return to home">&#x27F5; Back</g-link></p>
+          <p class="recipe__back"><g-link to="/" title="Return to home">&#9664; Back</g-link></p>
         </div>
       </div>
     </article>
