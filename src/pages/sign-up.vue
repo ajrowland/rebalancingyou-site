@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <banner heading="Health &amp; Wellness is<br />a lifelong journey..." image="banner.png" />
+    <banner heading="Health &amp; Wellness<br />is a lifelong journey..." image="banner.png" />
     <section class="section section--subscribe">
       <div class="container">
         <div class="section__container">

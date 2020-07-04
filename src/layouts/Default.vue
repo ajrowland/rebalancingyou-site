@@ -88,6 +88,7 @@ body {
       @include mq($from: tablet) {
         padding: 10px 30px;
         align-items: flex-end;
+        flex-direction: column;
       }
     }
   }
@@ -320,7 +321,7 @@ main {
   }
 
   a {
-    fill: $colour-coral;
+    fill: $colour-green;
     display: block;
     padding: 7px;
   }
