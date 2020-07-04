@@ -114,10 +114,6 @@ body {
     }
 
     @include mq($from: tablet) {
-      margin: 34px 10px;
-    }
-
-    @include mq($from: desktop) {
       display: none;
     }
   }
