@@ -348,6 +348,10 @@ main {
     font-size: 34px;
   }
 
+  .header__social {
+    position: static;
+  }
+
   .header__social,
   .social {
     li {
