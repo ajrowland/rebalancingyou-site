@@ -22,7 +22,7 @@
       </div>
       <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
       <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1a935104817ba5bf1a65e8186_ba4ae16724" tabindex="-1" value=""></div>
-      <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="form__submit"></div>
+      <div class="clear"><button type="submit" id="mc-embedded-subscribe" class="form__submit">Subscribe</button></div>
     </form>
   </div>
 </template>
@@ -54,6 +54,7 @@
   &__field {
     width: calc(100% - 20px);
     border: 1px solid $colour-grey-light;
+    -webkit-appearance: none;
   }
 
   &__submit {
