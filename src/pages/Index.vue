@@ -92,7 +92,7 @@ export default {
   },
   metaInfo: function () {
     const { siteUrl, siteDescription } = this.$page.metadata
-    const title = 'Rebalancing You. Emma Rowland nutrition.'
+    const title = 'Rebalancing You. Emma Rowland Nutrition.'
     const imageUrl = `${siteUrl}/share.jpg`
 
     const metaData = {
