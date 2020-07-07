@@ -152,6 +152,8 @@ query Article ($id: ID!) {
   &__content {
     margin: 0 auto;
     line-height: 2rem;
+    overflow: hidden;
+    width: 100%;
 
     @include mq($from: tablet) {
       width: 70%;
