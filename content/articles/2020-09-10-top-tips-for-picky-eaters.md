@@ -1,13 +1,15 @@
 ---
-title: Picky Eaters
+title: Top Tips for Picky Eaters
 date: 2020-09-10
 published: true
 tags: ["Tag 1", "tag 2"]
 cover_image: ./images/picky-eaters.jpg
 cover_image_alt: Child reaching out for strawberries.
-description: "Top Tips for picky eaters."
-introduction: "Top Tips"
+description: "Some people just don't like a lot of food or let's just say, they like what they like and that's all there is to it!"
+introduction: "Some people just don't like a lot of food or let's just say, they like what they like and that's all there is to it!"
 ---
+
+But what happens when the food you eat or don't eat is impacting on your health or making it difficult to prepare a family meal that keeps everyone happy. As well as impacting on the individual themselves it can also cause anxiety and stress for parents of picky eaters which in itself can impact health. It's actually quite a common problem and if dealt with in the right way it can be managed.
 
 **Get them involved** – this can be cooking, shopping and even choosing the menu with your help of course. Limiting options to two choices keeps it simple but still gives them a feeling of control. Involving children in the shopping and preparing allows them to see where the food comes from and gives them an understanding of how ingredients turn into meals. Getting them used to using all their senses like touch and smell as well as taste. It also creates a sense of anticipation which is important to start the digestive process.
 
