@@ -3,8 +3,8 @@ title: Respecting Food
 date: 2020-09-11
 published: true
 tags: ["Tag 1", "tag 2"]
-cover_image: ./images/mindful-eating.jpg
-cover_image_alt: Photo petrol pump.
+cover_image: ./images/respecting-food.jpg
+cover_image_alt: Photo of healthy foods.
 description: "Have you ever thought about the meals you eat and given them a respect ranking? What does this even mean? "
 introduction: "Have you ever thought about the meals you eat and given them a respect ranking? What does this even mean? "
 ---
