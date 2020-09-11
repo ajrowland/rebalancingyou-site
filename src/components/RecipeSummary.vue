@@ -5,15 +5,20 @@
       <div class="recipe-summary__text">
         <h3>{{recipe.title}}</h3>
       </div>
-      <g-image class="recipe-summary__thumbnail" :src="recipe.cover_image.src" alt="Recipe thumbnail" />
+      <g-image
+        v-if="recipe.cover_image"
+        class="recipe-summary__thumbnail"
+        :src="recipe.cover_image.src"
+        alt="Recipe thumbnail"
+      />
     </div>
   </g-link>
 </template>
 
 <script>
 export default {
-  props: ["recipe"]
-}
+  props: ["recipe"],
+};
 </script>
 
 <style lang="scss">
@@ -27,7 +32,7 @@ export default {
   background-repeat: no-repeat;
   color: $colour-grey-dark;
   text-decoration: none;
-  transition: transform .2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
   overflow: hidden;
   width: 100%;
 
@@ -49,7 +54,7 @@ export default {
   }
 
   &__info {
-    font-size: .8rem;
+    font-size: 0.8rem;
     position: absolute;
     top: 0;
     right: 0;
