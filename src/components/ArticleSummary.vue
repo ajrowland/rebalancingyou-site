@@ -38,6 +38,10 @@ export default {
     transform: scale(1.02);
   }
 
+  @include mq($from: tablet) {
+    width: calc(50% - 40px);
+  }
+
   @include mq($from: desktop) {
     width: calc(33.33% - 40px);
   }

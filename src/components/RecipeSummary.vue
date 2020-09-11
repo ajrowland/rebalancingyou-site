@@ -41,11 +41,11 @@ export default {
   }
 
   @include mq($from: tablet) {
-    flex: 1 0 calc(40% - 20px);
+    width: calc(50% - 40px);
   }
 
   @include mq($from: desktop) {
-    flex: 1 0 calc(25% - 20px);
+    width: calc(33.33% - 40px);
   }
 
   &__inner {
