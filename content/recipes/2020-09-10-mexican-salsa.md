@@ -22,7 +22,7 @@ ingredients:
   - Juice from 1/2-1 lime
   - Salt and pepper
 method:
-  - Half the cherry tomatoes and slice the spring onions then peel and chop the avocado into large chunks.
+  - Halve the cherry tomatoes and slice the spring onions then peel and chop the avocado into large chunks.
   - Place in a large bowl. Drain the beans and sweetcorn and add to the bowl. Use a large spoon to gently toss all the ingredients together.
   - Mix all the dressing ingredients together and mix well.
   - Now deseed and chop the red chilli add it to the dressing, pour over the chopped salad and sprinkle with the fresh coriander.
@@ -30,5 +30,5 @@ method:
 end:
   heading: Notes
   text:
-    - Try using fresh corn just steam and cut straight off the cob. Use green chilli instead of red for a milder taste. Different beans like pinto and kidney beans can make a great alternative if you can’t get black beans.
+    - Try using fresh corn, or just steam and cut straight off the cob. Use green chilli instead of red for a milder taste. Different beans like pinto and kidney beans can make a great alternative if you can’t get black beans.
 ---
