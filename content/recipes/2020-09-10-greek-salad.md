@@ -5,8 +5,8 @@ published: true
 tags: ["Recipe"]
 cover_image: ./images/greeksalad.jpg
 cover_image_alt: Greek Salad ingredients.
-description: "Greek Salad"
-introduction: ""
+description: "Who doesn't love a Greek salad? This makes a great addition to any meal, picnic or BBQ. The protein from the feta and the healthy fats from the olive oil and olives bring balance making it a light but filling standalone meal too."
+introduction: "Who doesn't love a Greek salad? This makes a great addition to any meal, picnic or BBQ. The protein from the feta and the healthy fats from the olive oil and olives bring balance making it a light but filling standalone meal too."
 ingredients:
   - 1/4 cucumber
   - 1/3 red pepper (optional)

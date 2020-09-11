@@ -5,8 +5,8 @@ published: true
 tags: ["Recipe"]
 cover_image: ./images/asianslaw.jpg
 cover_image_alt: Asian Slaw ingredients.
-description: "Mexican Salsa"
-introduction: ""
+description: "Who knew you could whip this up in pretty much under 5 minutes? It's a flavour sensation you will love and once you've made it you won't be able to stop! Serve with baked salmon, chicken satay or as a side to any red or green Thai curry. The perfect way to increase your daily vegetable intake!"
+introduction: "Who knew you could whip this up in pretty much under 5 minutes? It's a flavour sensation you will love and once you've made it you won't be able to stop! Serve with baked salmon, chicken satay or as a side to any red or green Thai curry. The perfect way to increase your daily vegetable intake!"
 ingredients:
   - 2 medium carrots
   - ½ a small red cabbage

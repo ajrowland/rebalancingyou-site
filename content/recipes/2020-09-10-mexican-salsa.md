@@ -5,8 +5,8 @@ published: true
 tags: ["Recipe"]
 cover_image: ./images/blackbeansalsa.jpg
 cover_image_alt: Mexican Salsa ingredients.
-description: "Mexican Salsa"
-introduction: ""
+description: "This salad uses all the ingredients for a classic tomato salsa and guacamole but with the addition of sweetcorn and black beans. The lime juice and chilli add zing and heat, perfect served with any Mexican style dishes."
+introduction: "This salad uses all the ingredients for a classic tomato salsa and guacamole but with the addition of sweetcorn and black beans. The lime juice and chilli add zing and heat, perfect served with any Mexican style dishes."
 ingredients:
   - 1 Avocado
   - 1 can of black beans
