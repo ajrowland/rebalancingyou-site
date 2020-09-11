@@ -3,7 +3,10 @@
     <div class="article-summary__inner">
       <div class="article-summary__info">{{article.label}}</div>
       <div class="article-summary__text">
-        <h3>{{article.title}} <span class="article-summary__read-more">Read more ▸</span></h3>
+        <h3>
+          {{article.title}}
+          <span class="article-summary__read-more">Read more ▸</span>
+        </h3>
       </div>
       <g-image class="article-summary__thumbnail" :src="article.image.src" alt="Article thumbnail" />
     </div>
@@ -12,8 +15,8 @@
 
 <script>
 export default {
-  props: ["article"]
-}
+  props: ["article"],
+};
 </script>
 
 <style lang="scss">
@@ -27,7 +30,7 @@ export default {
   background-repeat: no-repeat;
   color: $colour-grey-dark;
   text-decoration: none;
-  transition: transform .2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
   overflow: hidden;
   width: 100%;
 
@@ -36,7 +39,7 @@ export default {
   }
 
   @include mq($from: desktop) {
-    flex: 1 0 calc(25% - 40px);
+    width: calc(33.33% - 40px);
   }
 
   &__inner {
@@ -45,7 +48,7 @@ export default {
   }
 
   &__info {
-    font-size: .8rem;
+    font-size: 0.8rem;
     position: absolute;
     top: 0;
     right: 0;
@@ -60,7 +63,12 @@ export default {
     right: 0;
     position: absolute;
     padding: 80px 20px 20px 20px;
-    background: linear-gradient(to top, rgba($colour-white, 1) 45%,rgba($colour-white, .7) 63%,rgba($colour-white, 0) 100%);
+    background: linear-gradient(
+      to top,
+      rgba($colour-white, 1) 45%,
+      rgba($colour-white, 0.7) 63%,
+      rgba($colour-white, 0) 100%
+    );
 
     h3 {
       margin: 0;
