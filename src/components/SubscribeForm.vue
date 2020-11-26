@@ -3,7 +3,7 @@
     <h2>Don't wait until tomorrow</h2>
     <p>Join our Rebalancing You community for your free guide:<br />
     <strong>The Ultimate Healthful, Well Stocked Kitchen</strong>.</p>
-    <form action="https://kitchenstars.us12.list-manage.com/subscribe/post?u=1a935104817ba5bf1a65e8186&amp;id=ba4ae16724" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <form action="https://kitchenstars.us12.list-manage.com/subscribe?u=1a935104817ba5bf1a65e8186&id=765a0e6187" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
       <div>
         <label class="form__label" for="mce-FNAME">First Name </label>
         <input class="form__field" type="text" value="" name="FNAME" id="mce-FNAME">
