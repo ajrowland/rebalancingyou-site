@@ -2,20 +2,19 @@
   <a
     v-if="display"
     class="photo"
-    :style="`background-image:url(${post.thumbnail_src})`"
     :href="`https://www.instagram.com/p/${post.shortcode}`"
     rel="noopener"
     target="_blank"
     title="Visit post on Instagram"
   >
     <div class="photo__inner">
+      <img
+        class="photo__thumbnail"
+        :src="post.thumbnail_src"
+        alt="Post thumbnail"
+        loading="lazy"
+      />
       <div class="photo__text">
-        <img
-          class="photo__thumbnail"
-          :src="post.thumbnail_src"
-          alt="Post thumbnail"
-          loading="lazy"
-        />
         {{
           text.replace(
             /([\uE000-\uF8FF]|\uD83C[\uDF00-\uDFFF]|\uD83D[\uDC00-\uDDFF])/g,
@@ -57,6 +56,7 @@
     height: 100%;
     display: flex;
     justify-content: flex-end;
+    position: relative;
   }
 
   .photo__text {
@@ -69,11 +69,9 @@
     }
   }
 
-  .photo__thumbnail,
   .photo__tags {
     display: none;
   }
-  //}
 
   &:hover {
     transform: scale(1.02);
@@ -125,16 +123,10 @@
   }
 
   &__thumbnail {
-    float: right;
-    margin: 0 0 20px 20px;
-    border: 10px solid $colour-white;
-    border-radius: 120px;
-    max-width: 80px;
-    border-radius: 60px;
+    width: 100%;
 
     @include mq($from: tablet) {
-      max-width: 120px;
-      border-radius: 80px;
+      position: absolute;
     }
   }
 
