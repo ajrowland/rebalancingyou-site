@@ -14,6 +14,7 @@
           class="photo__thumbnail"
           :src="post.thumbnail_src"
           alt="Post thumbnail"
+          loading="lazy"
         />
         {{
           text.replace(

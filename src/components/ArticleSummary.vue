@@ -1,14 +1,18 @@
 <template>
   <g-link class="article-summary" :to="article.path" title="Read full article">
     <div class="article-summary__inner">
-      <div class="article-summary__info">{{article.label}}</div>
+      <div class="article-summary__info">{{ article.label }}</div>
       <div class="article-summary__text">
         <h3>
-          {{article.title}}
+          {{ article.title }}
           <span class="article-summary__read-more">Read more ▸</span>
         </h3>
       </div>
-      <g-image class="article-summary__thumbnail" :src="article.image.src" alt="Article thumbnail" />
+      <g-image
+        class="article-summary__thumbnail"
+        :src="article.image.src"
+        alt="Article thumbnail"
+      />
     </div>
   </g-link>
 </template>
