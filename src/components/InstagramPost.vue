@@ -1,12 +1,34 @@
 <template>
-  <a v-if="display" class="photo" :style="`background-image:url(${post.thumbnail_src})`" :href="`https://www.instagram.com/p/${post.shortcode}`" rel="noopener" target="_blank" title="Visit post on Instagram">
+  <a
+    v-if="display"
+    class="photo"
+    :style="`background-image:url(${post.thumbnail_src})`"
+    :href="`https://www.instagram.com/p/${post.shortcode}`"
+    rel="noopener"
+    target="_blank"
+    title="Visit post on Instagram"
+  >
     <div class="photo__inner">
       <div class="photo__text">
-        <img class="photo__thumbnail" :src="post.thumbnail_src" alt="Post thumbnail">
-        {{text.replace(/([\uE000-\uF8FF]|\uD83C[\uDF00-\uDFFF]|\uD83D[\uDC00-\uDDFF])/g, '')}}
+        <img
+          class="photo__thumbnail"
+          :src="post.thumbnail_src"
+          alt="Post thumbnail"
+        />
+        {{
+          text.replace(
+            /([\uE000-\uF8FF]|\uD83C[\uDF00-\uDFFF]|\uD83D[\uDC00-\uDDFF])/g,
+            ""
+          )
+        }}
       </div>
       <div class="photo__tags" v-if="tags">
-        <div class="photo__tag" v-for="(tag, i) in tags" :key="i" v-html="tag" />
+        <div
+          class="photo__tag"
+          v-for="(tag, i) in tags"
+          :key="i"
+          v-html="tag"
+        />
       </div>
     </div>
   </a>
@@ -16,47 +38,47 @@
 .photo {
   display: block;
   margin: 20px;
-  background: rgba(255, 255, 255, .6);
+  background: rgba(255, 255, 255, 0.6);
   border-bottom: 4px solid $colour-green;
   background-size: cover;
   background-repeat: no-repeat;
   color: $colour-grey-dark;
   text-decoration: none;
-  transition: transform .2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
   width: 100%;
 
   //&:nth-child(odd) {
-    min-height: 350px;
+  min-height: 350px;
 
-    .photo__inner {
-      background: none;
-      padding: 0;
-      height: 100%;
-      display: flex;
-      justify-content: flex-end;
+  .photo__inner {
+    background: none;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .photo__text {
+    background: $colour-white;
+    padding: 20px;
+
+    &:before {
+      left: 6px;
+      top: -2px;
     }
+  }
 
-    .photo__text {
-      background: $colour-white;
-      padding: 20px;
-
-      &:before {
-        left: 6px;
-        top: -2px;
-      }
-    }
-
-    .photo__thumbnail,
-    .photo__tags {
-      display: none;
-    }
+  .photo__thumbnail,
+  .photo__tags {
+    display: none;
+  }
   //}
 
   &:hover {
     transform: scale(1.02);
   }
 
-  &:nth-child(3n+1):last-child {
+  &:nth-child(3n + 1):last-child {
     display: none;
   }
 
@@ -74,7 +96,7 @@
     justify-content: space-between;
     height: calc(100% - 40px);
     position: relative;
-    background: rgba(255, 255, 255, .8);
+    background: rgba(255, 255, 255, 0.8);
     padding: 20px;
   }
 
@@ -91,7 +113,7 @@
       left: -13px;
       color: $colour-green;
       top: -23px;
-      opacity: .4;
+      opacity: 0.4;
       line-height: 1;
     }
 
@@ -118,11 +140,11 @@
   &__tags {
     margin-top: 20px;
     padding-top: 10px;
-    border-top: 1px solid rgba($colour-coral, .1);
+    border-top: 1px solid rgba($colour-coral, 0.1);
   }
 
   &__tag {
-    font-size: .8rem;
+    font-size: 0.8rem;
     font-weight: bold;
     display: inline-block;
     margin-right: 10px;
@@ -134,19 +156,29 @@
 
 <script>
 export default {
-  props: ['post'],
+  props: ["post"],
   data() {
     return {
-      text: '',
+      text: "",
       tags: [],
-      display: true
-    }
+      display: true,
+    };
   },
   created() {
-    const tokens = this.post.edge_media_to_caption.edges[0].node.text.split(' ')
-    this.text = tokens.filter(t => !t.startsWith('#')).slice(0, 10).join(' ').replace(/([\u2700-\u27BF]|[\uE000-\uF8FF]|\uD83C[\uDC00-\uDFFF]|\uD83D[\uDC00-\uDFFF]|[\u2011-\u26FF]|\uD83E[\uDD10-\uDDFF])/g, '') + '...'
-    this.tags = tokens.filter(t => t.startsWith('#') && t.length > 1)
-    this.display = this.tags.includes('#rebalancingyou')
-  }
-}
+    const tokens = this.post.edge_media_to_caption.edges[0].node.text.split(
+      " "
+    );
+    this.text =
+      tokens
+        .filter((t) => !t.startsWith("#"))
+        .slice(0, 10)
+        .join(" ")
+        .replace(
+          /([\u2700-\u27BF]|[\uE000-\uF8FF]|\uD83C[\uDC00-\uDFFF]|\uD83D[\uDC00-\uDFFF]|[\u2011-\u26FF]|\uD83E[\uDD10-\uDDFF])/g,
+          ""
+        ) + "...";
+    this.tags = tokens.filter((t) => t.startsWith("#") && t.length > 1);
+    this.display = this.tags.includes("#rebalancingyou");
+  },
+};
 </script>

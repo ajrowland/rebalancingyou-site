@@ -1,6 +1,9 @@
 <template>
   <Layout>
-    <banner heading="Energise,<br />Restore,<br />Nourish..." image="banner.png" />
+    <banner
+      heading="Energise,<br />Restore,<br />Nourish..."
+      image="banner.png"
+    />
     <section class="section section--articles">
       <div class="container">
         <h2>
@@ -38,13 +41,21 @@
     <section class="section section--instagram">
       <div class="container">
         <h2>
-          <a href="https://www.instagram.com/rebalancingyou" rel="noopener" target="_blank">
+          <a
+            href="https://www.instagram.com/rebalancingyou"
+            rel="noopener"
+            target="_blank"
+          >
             Instagram
             <span class="section__view-more">View more ▸</span>
           </a>
         </h2>
         <div class="section__container">
-          <instagram-post v-for="post in $page.photos.edges" :key="post.node.id" :post="post.node" />
+          <instagram-post
+            v-for="post in $page.photos.edges"
+            :key="post.node.id"
+            :post="post.node"
+          />
         </div>
       </div>
     </section>
@@ -113,7 +124,7 @@ export default {
     InstagramPost,
     SubscribeForm,
   },
-  metaInfo: function () {
+  metaInfo: function() {
     const { siteUrl, siteDescription } = this.$page.metadata;
     const title = "Rebalancing You. Emma Rowland Nutrition.";
     const imageUrl = `${siteUrl}/share.jpg`;
