@@ -13,6 +13,8 @@
         :src="post.thumbnail_src"
         alt="Post thumbnail"
         loading="lazy"
+        width="375"
+        height="375"
       />
       <div class="photo__text">
         {{
@@ -82,11 +84,11 @@
   }
 
   @include mq($from: tablet) {
-    flex: 1 0 calc(40% - 20px);
+    width: calc(50% - 40px);
   }
 
   @include mq($from: desktop) {
-    flex: 1 0 calc(25% - 20px);
+    width: calc(33.33% - 40px);
   }
 
   &__inner {
@@ -124,6 +126,7 @@
 
   &__thumbnail {
     width: 100%;
+    height: 100%;
 
     @include mq($from: tablet) {
       position: absolute;
