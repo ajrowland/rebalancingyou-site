@@ -126,10 +126,11 @@
 
   &__thumbnail {
     width: 100%;
-    height: 100%;
+    height: auto;
 
     @include mq($from: tablet) {
       position: absolute;
+      height: 100%;
     }
   }
 
