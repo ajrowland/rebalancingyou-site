@@ -7,8 +7,8 @@ cover_image: ./images/mackerel-pate.jpg
 cover_image_alt: Mackerel Pate
 additional_image_1:
 additional_image_1_alt:
-description: "Mackerel is a good source of protein and is high in omega three. Serve with vegetable sticks to count towards your five a day"
-introduction: "Mackerel is a good source of protein and is high in omega three. Serve with vegetable sticks to count towards your five a day"
+description: "Mackerel is a good source of protein and is high in omega three. Serve with vegetable sticks to count towards your five a day."
+introduction: "Mackerel is a good source of protein and is high in omega three. Serve with vegetable sticks to count towards your five a day."
 ingredients:
   - 200 g smoked peppered mackerel
   - 50g light cream cheese
@@ -26,6 +26,6 @@ method:
 end:
   heading: Tasty alternatives
   text:
-    - add a few capers.
-    - use a Greek yogurt for an extra creamy taste
+    - Add a few capers.
+    - Use a Greek yogurt for an extra creamy taste
 ---
