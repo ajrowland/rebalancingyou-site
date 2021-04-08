@@ -1,28 +1,78 @@
 <template>
   <div class="form form--subscribe">
     <h2>Don't wait until tomorrow</h2>
-    <p>Join our Rebalancing You community for your free guide:<br />
-    <strong>The Ultimate Healthful, Well Stocked Kitchen</strong>.</p>
-    <form action="https://kitchenstars.us12.list-manage.com/subscribe?u=1a935104817ba5bf1a65e8186&id=765a0e6187" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <p>
+      Join our Rebalancing You community for your free guide:<br />
+      <strong>Power Through Pregnancy From Conception and Beyond.</strong>.
+    </p>
+    <form
+      action="https://kitchenstars.us12.list-manage.com/subscribe?u=1a935104817ba5bf1a65e8186&id=765a0e6187"
+      method="post"
+      id="mc-embedded-subscribe-form"
+      name="mc-embedded-subscribe-form"
+      class="validate"
+      target="_blank"
+      novalidate
+    >
       <div>
         <label class="form__label" for="mce-FNAME">First Name </label>
-        <input class="form__field" type="text" value="" name="FNAME" id="mce-FNAME">
+        <input
+          class="form__field"
+          type="text"
+          value=""
+          name="FNAME"
+          id="mce-FNAME"
+        />
       </div>
       <div>
         <label class="form__label" for="mce-LNAME">Last Name </label>
-        <input class="form__field" type="text" value="" name="LNAME" id="mce-LNAME">
+        <input
+          class="form__field"
+          type="text"
+          value=""
+          name="LNAME"
+          id="mce-LNAME"
+        />
       </div>
       <div>
-        <label class="form__label" for="mce-EMAIL">Email Address <span class="form__required">*</span></label>
-        <input class="form__field" type="email" value="" name="EMAIL" id="mce-EMAIL" required>
+        <label class="form__label" for="mce-EMAIL"
+          >Email Address <span class="form__required">*</span></label
+        >
+        <input
+          class="form__field"
+          type="email"
+          value=""
+          name="EMAIL"
+          id="mce-EMAIL"
+          required
+        />
       </div>
       <div id="mce-responses">
-        <div class="response" id="mce-error-response" style="display:none"></div>
-        <div class="response" id="mce-success-response" style="display:none"></div>
+        <div
+          class="response"
+          id="mce-error-response"
+          style="display:none"
+        ></div>
+        <div
+          class="response"
+          id="mce-success-response"
+          style="display:none"
+        ></div>
       </div>
       <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-      <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1a935104817ba5bf1a65e8186_ba4ae16724" tabindex="-1" value=""></div>
-      <div class="clear"><button type="submit" id="mc-embedded-subscribe" class="form__submit">Subscribe</button></div>
+      <div style="position: absolute; left: -5000px;" aria-hidden="true">
+        <input
+          type="text"
+          name="b_1a935104817ba5bf1a65e8186_ba4ae16724"
+          tabindex="-1"
+          value=""
+        />
+      </div>
+      <div class="clear">
+        <button type="submit" id="mc-embedded-subscribe" class="form__submit">
+          Subscribe
+        </button>
+      </div>
     </form>
   </div>
 </template>
