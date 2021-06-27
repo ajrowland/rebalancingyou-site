@@ -21,7 +21,7 @@
 
         <p>Because dialing into what's causing your Brain Fog is the secret to feeling like YOU again!</p>
 
-        <p>Inside <i>5 Simple Steps to Banish Brain Fog so you can Think Straight</i>, you'll discover:</p>
+        <p>Inside <strong>5 Simple Steps to Banish Brain Fog so you can Think Straight</strong>, you'll discover:</p>
 
         <ul>
           <li>How to Nourish your Brain Cells</li>
