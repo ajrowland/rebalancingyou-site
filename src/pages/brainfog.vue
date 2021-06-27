@@ -15,9 +15,7 @@
 
         <p>Not knowing when it would strike was embarrassing and I’d had enough but after implementing these simple steps I now feel like I can think straight again!</p>
 
-        <p>AND it's the reason why I want to share this FREE</p>
-
-        <p>5 Simple Steps to Banish Brain Fog so you can Think Straight actionable workbook with you.</p>
+        <p>AND it's the reason why I want to share this FREE <strong>5 Simple Steps to Banish Brain Fog so you can Think Straight</strong>, actionable workbook with you.</p>
 
         <p>Because dialing into what's causing your Brain Fog is the secret to feeling like YOU again!</p>
 
