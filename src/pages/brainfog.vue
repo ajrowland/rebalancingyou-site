@@ -7,7 +7,7 @@
           <p>READY to start feeling more clear headed and like your old self again? Great, you're in the right place...</p>
         </h3>
 
-        <figure>
+        <figure class="figure--desktop">
           <g-image src="~/assets/five-simple-steps.png" alt="5 simple steps" />
         </figure>
 
@@ -21,6 +21,10 @@
 
         <p>Because dialing into what's causing your Brain Fog is the secret to feeling like YOU again!</p>
 
+        <figure class="figure--mobile">
+          <g-image src="~/assets/five-simple-steps.png" alt="5 simple steps" />
+        </figure>
+
         <p>Inside <strong>5 Simple Steps to Banish Brain Fog so you can Think Straight</strong>, you'll discover:</p>
 
         <ul>
@@ -32,7 +36,7 @@
 
         <p>READY to start feeling Normal again?</p>
 
-        <p>Fill in your details below and grab your free copy of the ‘5 Simple Steps to Banish Brain Fog so you can Think Straight’ workbook today.</p>
+        <p>Fill in your details below and grab your free copy of the <strong>5 Simple Steps to Banish Brain Fog so you can Think Straight</strong> workbook today.</p>
 
         <p>THIS is where the SIGN up form Goes</p>
 

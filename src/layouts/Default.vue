@@ -309,6 +309,12 @@ main {
   );
 }
 
+strong {
+  font-weight: bold;
+  font-family: "Open Sans Condensed";
+  font-weight: bold;
+}
+
 .section {
   &--articles {
     padding-top: 2rem;

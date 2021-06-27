@@ -62,7 +62,6 @@ query {
   h1,
   h1 span {
     font-size: 30px;
-    display: inline;
   }
 
   h2 {
@@ -94,17 +93,29 @@ query {
     }
   }
 
-  figure {
-    margin: 20px 0;
+  img {
+    width: 100%;
+  }
 
-    @include mq($from: tablet) {
-      float: right;
-      width: 35%;
-      margin: 0 0 10px 20px;
+  .figure {
+    &--mobile {
+      display: block;
+      margin: 20px 0;
+
+      @include mq($from: tablet) {
+        display: none;
+      }
     }
 
-    img {
-      width: 100%;
+    &--desktop {
+      display: none;
+
+      @include mq($from: tablet) {
+        display: inline;
+        float: right;
+        width: 40%;
+        margin: 0 0 10px 20px;
+      }
     }
   }
 }
