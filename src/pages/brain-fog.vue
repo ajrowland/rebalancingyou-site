@@ -2,14 +2,10 @@
   <Layout>
     <article class="article">
       <div class="container">
-        <div class="article__header">
-          <h3>
-            Fed up of feeling like your brain is fuzzy all the time?
-          </h3>
-        </div>
-        <div class="article__intro">
+        <h2>Fed up of feeling like your brain is fuzzy all the time?</h2>
+        <h3>
           <p>READY to start feeling more clear headed and like your old self again? Great, you're in the right place...</p>
-        </div>
+        </h3>
 
         <figure>
           <g-image src="~/assets/five-simple-steps.png" alt="5 simple steps" />

@@ -65,10 +65,11 @@ query {
     display: inline;
   }
 
-  h3 {
+  h2 {
     font-size: 20px;
     color: $colour-coral;
     font-family: "Open Sans Condensed";
+    font-weight: bold;
 
     @include mq($from: tablet) {
       font-size: 60px;
