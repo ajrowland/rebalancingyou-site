@@ -26,10 +26,10 @@
         <p>Inside <strong>5 Simple Steps to Banish Brain Fog so you can Think Straight</strong>, you'll discover:</p>
 
         <ul>
-          <li>How to Nourish your Brain Cells</li>
-          <li>The right amount of protein to eat</li>
-          <li>Ways to Soothe your Nervous System</li>
-          <li>Hydration Hacks</li>
+          <li>The secret to more mental clarity with just one dietary addition</li>
+          <li>The right amount of protein to keep you energised and thinking straight all day</li>
+          <li>Ways to soothe your nervous system so you feel less stressed</li>
+          <li>Hydration Hacks to keep your memory sharp and your wrinkles at bay!</li>
         </ul>
 
         <p>READY to start feeling Normal again?</p>
@@ -37,8 +37,6 @@
         <p>Fill in your details below and grab your free copy of the <strong>5 Simple Steps to Banish Brain Fog so you can Think Straight</strong> workbook today.</p>
 
         <p>THIS is where the SIGN up form Goes</p>
-
-        <p>Once you've completed all your details your FREE workbook will be ready to download in your confirmation email.</p>
       </div>
     </article>
   </Layout>
