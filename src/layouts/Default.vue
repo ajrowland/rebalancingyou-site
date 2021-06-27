@@ -297,7 +297,8 @@ h2 {
   font-size: 21px;
 }
 
-p {
+p,
+li {
   line-height: 1.8;
 }
 
