@@ -48,6 +48,39 @@ import Layout from '~/layouts/Landing.vue'
 export default {
   components: {
     Layout
+  },
+  metaInfo: function () {
+    const { siteUrl } = this.$page.metadata
+    const title = 'Fed up of feeling like your brain is fuzzy all the time?';
+    const desc = 'READY to start feeling more clear headed and like your old self again? Great, you\'re in the right place...';
+    const image = require('~/assets/five-simple-steps.png');
+    const imageUrl = `${siteUrl}${image}`
+
+    return {
+      title,
+      meta: [
+        { name: 'description', content: desc },
+        { name: 'twitter:card', content: 'summary_large_image' },
+        { name: 'twitter:description', content: desc },
+        { name: 'twitter:title', content: title },
+        { name: 'twitter:site', content: '@rebalancingyou' },
+        { name: 'twitter:creator', content: '@rebalancingyou' },
+        { property: 'og:type', content: 'article' },
+        { property: 'og:title', content: title },
+        { property: 'og:description', content: desc },
+        { property: 'og:url', content: `${siteUrl}/brain-fog/` },
+        { name: 'twitter:image', content: imageUrl },
+        { property: 'og:image', content: imageUrl },
+      ],
+    }
   }
 }
 </script>
+
+<page-query>
+{
+  metadata {
+    siteUrl
+  }
+}
+</page-query>
