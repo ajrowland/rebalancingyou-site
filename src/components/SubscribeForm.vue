@@ -2,8 +2,7 @@
   <div class="form form--subscribe">
     <h2>Don't wait until tomorrow</h2>
     <p>
-      Join our Rebalancing You community for your free guide:<br />
-      <strong>Power Through Pregnancy From Conception and Beyond.</strong>.
+      Join our Rebalancing You community.
     </p>
     <form
       action="https://kitchenstars.us12.list-manage.com/subscribe?u=1a935104817ba5bf1a65e8186&id=765a0e6187"
