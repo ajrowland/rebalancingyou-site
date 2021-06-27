@@ -1,0 +1,57 @@
+<template>
+  <Layout>
+    <article class="article">
+      <div class="container">
+        <div class="article__header">
+          <h3>
+            Fed up of feeling like your brain is fuzzy all the time?
+          </h3>
+        </div>
+        <div class="article__intro">
+          <p>READY to start feeling more clear headed and like your old self again? Great, you're in the right place...</p>
+        </div>
+
+        <figure>
+          <g-image src="~/assets/five-simple-steps.png" alt="5 simple steps" />
+        </figure>
+
+        <p>Trying to get through each day with brain fog is no laughing matter. I know this because I've suffered from it. Forgetting what I was doing, mind going blank mid sentence AND even forgetting entire conversations!</p>
+
+        <p>Not knowing when it would strike was embarrassing and I’d had enough but after implementing these simple steps I now feel like I can think straight again!</p>
+
+        <p>AND it's the reason why I want to share this FREE</p>
+
+        <p>5 Simple Steps to Banish Brain Fog so you can Think Straight actionable workbook with you.</p>
+
+        <p>Because dialing into what's causing your Brain Fog is the secret to feeling like YOU again!</p>
+
+        <p>Inside <i>5 Simple Steps to Banish Brain Fog so you can Think Straight</i>, you'll discover:</p>
+
+        <ul>
+          <li>How to Nourish your Brain Cells</li>
+          <li>The right amount of protein to eat</li>
+          <li>Ways to Soothe your Nervous System</li>
+          <li>Hydration Hacks</li>
+        </ul>
+
+        <p>READY to start feeling Normal again?</p>
+
+        <p>Fill in your details below and grab your free copy of the ‘5 Simple Steps to Banish Brain Fog so you can Think Straight’ workbook today.</p>
+
+        <p>THIS is where the SIGN up form Goes</p>
+
+        <p>Once you've completed all your details your FREE workbook will be ready to download in your confirmation email.</p>
+      </div>
+    </article>
+  </Layout>
+</template>
+
+<script>
+import Layout from '~/layouts/Landing.vue'
+
+export default {
+  components: {
+    Layout
+  }
+}
+</script>
