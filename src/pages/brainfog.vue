@@ -54,15 +54,20 @@
 
         <ul>
           <li>
-            The secret to more mental clarity with just one dietary addition
+            Discover The No 1 way to get more mental clarity with just one
+            dietary addition.
           </li>
           <li>
-            The right amount of protein to keep you energised and thinking
-            straight all day
+            Find out the right amount of protein to keep you energised and
+            thinking straight all day.
           </li>
-          <li>Ways to soothe your nervous system so you feel less stressed</li>
           <li>
-            Hydration Hacks to keep your memory sharp and your wrinkles at bay!
+            Learn simple ways to soothe your nervous system so you feel less
+            stressed and fuzzy headed.
+          </li>
+          <li>
+            How to keep your memory sharp and your mood more even with esy
+            hydration hacks.
           </li>
         </ul>
 
@@ -78,11 +83,6 @@
         </p>
 
         <div class="_form_1 signup-form"></div>
-
-        <p>
-          Once you've completed all your details your FREE workbook will be
-          ready to download in your confirmation email.
-        </p>
       </div>
     </article>
   </Layout>
@@ -171,10 +171,15 @@ export default {
   ._submit {
     font-size: 14px;
     text-transform: uppercase;
+    background: #d16666 !important;
 
     @include mq($from: tablet) {
       font-size: 18px;
     }
+  }
+
+  ._form-branding {
+    display: none;
   }
 }
 </style>
