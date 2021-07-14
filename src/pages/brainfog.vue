@@ -66,7 +66,7 @@
             stressed and fuzzy headed.
           </li>
           <li>
-            How to keep your memory sharp and your mood more even with esy
+            How to keep your memory sharp and your mood more even with easy
             hydration hacks.
           </li>
         </ul>
